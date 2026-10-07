@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://pusanjm-byte.github.io/naesarang-jokbal/sitemap.xml
