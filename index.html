@@ -254,6 +254,7 @@ section[id="takeout"]{scroll-margin-top:112px}
 .mark .wm small{margin-left:0;margin-top:4px}
 .mark .emb{display:block;height:54px;width:auto}
 @media (max-width:700px){.mark .emb{height:44px}.mark{gap:10px}}
+#lunch p.perk,.perk{display:inline-block;align-self:flex-start;background:var(--sun);color:var(--on-sun)!important;font-weight:900;font-size:clamp(1rem,1.6vw,1.15rem);letter-spacing:-.02em;padding:8px 16px;border-radius:999px;margin:4px 0 14px}
 
 .strip figcaption b{font-weight:600}
 #order{margin-top:10px}
@@ -295,8 +296,8 @@ section[id="takeout"]{scroll-margin-top:112px}
 </header>
 <main id="top">
 <section class="sec hero">
-<div class="ttl"><h1 class="en big fu" data-k="t1" data-ml="">Boiled fresh<br/>every day</h1>
-<p class="lede fu" data-k="t2">매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점</p></div>
+<div class="ttl"><p class="en big fu" data-k="t1" data-ml="">Boiled fresh<br/>every day</p>
+<h1 class="lede fu" data-k="t2">매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점</h1></div>
 <div class="film bleed">
 <video aria-label="갓 삶아 김이 나는 족발과 칼로 얇게 써는 모습을 매장에서 찍은 영상" autoplay="" id="film" loop="" muted="" playsinline="" poster="video/real-poster.jpg" preload="metadata">
 <source src="video/real.mp4" type="video/mp4"/>
@@ -351,16 +352,16 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="ctl"><button aria-label="이전 사진" data-for="food" data-go="-1" type="button">‹</button><button aria-label="다음 사진" data-for="food" data-go="1" type="button">›</button></div>
 </div>
 <div class="strip bleed" id="food">
-<figure><img alt="족발" src="img/n-jokbal.jpg"/><figcaption><b data-k="t48">족발</b><span data-k="t49">38,000원부터</span></figcaption></figure>
-<figure><img alt="보쌈과 보쌈김치" src="img/n-bossam.jpg"/><figcaption><b data-k="t50">보쌈</b><span data-k="t51">38,000원부터</span></figcaption></figure>
-<figure><img alt="냉채족발" src="img/n-naengchae.jpg"/><figcaption><b data-k="t52">냉채족발</b><span data-k="t53">40,000원부터</span></figcaption></figure>
-<figure><img alt="불족발" src="img/n-buljok.jpg"/><figcaption><b data-k="t54">불족발</b><span data-k="t55">40,000원부터</span></figcaption></figure>
+<figure><img alt="족발" decoding="async" loading="lazy" src="img/n-jokbal.jpg"/><figcaption><b data-k="t48">족발</b><span data-k="t49">38,000원부터</span></figcaption></figure>
+<figure><img alt="보쌈과 보쌈김치" decoding="async" loading="lazy" src="img/n-bossam.jpg"/><figcaption><b data-k="t50">보쌈</b><span data-k="t51">38,000원부터</span></figcaption></figure>
+<figure><img alt="냉채족발" decoding="async" loading="lazy" src="img/n-naengchae.jpg"/><figcaption><b data-k="t52">냉채족발</b><span data-k="t53">40,000원부터</span></figcaption></figure>
+<figure><img alt="불족발" decoding="async" loading="lazy" src="img/n-buljok.jpg"/><figcaption><b data-k="t54">불족발</b><span data-k="t55">40,000원부터</span></figcaption></figure>
 </div>
 <div class="cols">
 <div class="fu">
 <h3 class="en sub" data-k="t56">Half &amp; half</h3>
 <p data-k="t57">두 가지를 골라 한 접시에. 둘이서 가장 많이 찾습니다.</p>
-<figure class="sidepic"><img alt="보쌈과 불족발 반반 한 접시" src="img/n-half.jpg"/><figcaption data-k="t58">보쌈 + 불족발</figcaption></figure>
+<figure class="sidepic"><img alt="보쌈과 불족발 반반 한 접시" decoding="async" loading="lazy" src="img/n-half.jpg"/><figcaption data-k="t58">보쌈 + 불족발</figcaption></figure>
 <dl class="list">
 <dt data-k="t59">족발 + 보쌈</dt><dd data-k="t60">44,000</dd>
 <dt data-k="t61">족발 + 불족발</dt><dd data-k="t62">45,000</dd>
@@ -374,31 +375,32 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="fu" id="lunch">
 <h3 class="en sub" data-k="t74">Lunch</h3>
 <div class="en num" data-k="t75">14,000</div>
-<figure class="sidepic"><img alt="족발 접시와 황태해장국, 계란찜, 공기밥이 놓인 점심특선 한 상" src="img/n-lunch.jpg"/><figcaption data-k="t76">점심특선 한 상 (족발 선택)</figcaption></figure>
-<p data-k="t77">점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다. 2인 이상 주문하면 미니 막국수도 나옵니다.</p>
+<p class="perk" data-k="t76">2인 이상 주문하면 미니 막국수 서비스</p>
+<figure class="sidepic"><img alt="족발 접시와 황태해장국, 계란찜, 공기밥이 놓인 점심특선 한 상" decoding="async" loading="lazy" src="img/n-lunch.jpg"/><figcaption data-k="t77">점심특선 한 상 (족발 선택)</figcaption></figure>
+<p data-k="t78">점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다.</p>
 </div>
 <div class="fu">
-<h3 class="en sub" data-k="t78">Sides</h3>
-<p data-k="t79">같이 시키면 좋은 것들.</p>
-<div class="sidepics"><figure class="sidepic"><img alt="뚝배기 황태해장국" src="img/n-hwangtae.jpg"/><figcaption data-k="t80">황태해장국</figcaption></figure><figure class="sidepic"><img alt="쟁반막국수" src="img/n-noodle.jpg"/><figcaption data-k="t81">쟁반막국수</figcaption></figure><figure class="sidepic"><img alt="김가루와 마요네즈를 올린 셀프주먹밥" src="img/n-rice.jpg"/><figcaption data-k="t82">셀프주먹밥</figcaption></figure></div>
+<h3 class="en sub" data-k="t79">Sides</h3>
+<p data-k="t80">같이 시키면 좋은 것들.</p>
+<div class="sidepics"><figure class="sidepic"><img alt="뚝배기 황태해장국" decoding="async" loading="lazy" src="img/n-hwangtae.jpg"/><figcaption data-k="t81">황태해장국</figcaption></figure><figure class="sidepic"><img alt="쟁반막국수" decoding="async" loading="lazy" src="img/n-noodle.jpg"/><figcaption data-k="t82">쟁반막국수</figcaption></figure><figure class="sidepic"><img alt="김가루와 마요네즈를 올린 셀프주먹밥" decoding="async" loading="lazy" src="img/n-rice.jpg"/><figcaption data-k="t83">셀프주먹밥</figcaption></figure></div>
 <dl class="list">
-<dt data-k="t83">황태해장국</dt><dd data-k="t84">6,000</dd>
-<dt data-k="t85">쟁반막국수</dt><dd data-k="t86">6,000</dd>
-<dt data-k="t87">미니족</dt><dd data-k="t88">13,000</dd>
-<dt data-k="t89">셀프주먹밥</dt><dd data-k="t90">3,000</dd>
-<dt data-k="t91">보쌈김치</dt><dd data-k="t92">4,000</dd>
-<dt><span data-k="t93">고기 추가</span><small data-k="t94">족발, 보쌈</small></dt><dd data-k="t95">18,000</dd>
+<dt data-k="t84">황태해장국</dt><dd data-k="t85">6,000</dd>
+<dt data-k="t86">쟁반막국수</dt><dd data-k="t87">6,000</dd>
+<dt data-k="t88">미니족</dt><dd data-k="t89">13,000</dd>
+<dt data-k="t90">셀프주먹밥</dt><dd data-k="t91">3,000</dd>
+<dt data-k="t92">보쌈김치</dt><dd data-k="t93">4,000</dd>
+<dt><span data-k="t94">고기 추가</span><small data-k="t95">족발, 보쌈</small></dt><dd data-k="t96">18,000</dd>
 </dl>
 </div>
 </div>
 </section>
 <section class="sec" id="takeout" style="padding-top:0">
 <div class="tk">
-<figure class="fu"><img alt="포장 용기에 담긴 불족발과 족발" src="img/takeout.jpg"/><figcaption data-k="t96">포장해 간 불족발과 족발</figcaption></figure>
+<figure class="fu"><img alt="포장 용기에 담긴 불족발과 족발" decoding="async" loading="lazy" src="img/takeout.jpg"/><figcaption data-k="t97">포장해 간 불족발과 족발</figcaption></figure>
 <div class="tktx">
-<h2 class="en mid fu" data-k="t97">Takeout</h2>
-<p class="quote fu" data-k="t98">포장하면 2,000원 할인</p>
-<p class="fu" data-k="t99">전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.</p>
+<h2 class="en mid fu" data-k="t98">Takeout</h2>
+<p class="quote fu" data-k="t99">포장하면 2,000원 할인</p>
+<p class="fu" data-k="t100">전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.</p>
 <div class="act">
 <a class="pill" href="tel:0517113848">전화로 포장 주문</a>
 <a class="pill ghost" data-default="https://s.baemin.com/Y4000AIeibj3y" data-href="baemin" href="https://s.baemin.com/Y4000AIeibj3y" rel="noopener" target="_blank">배달의민족</a>
@@ -410,7 +412,7 @@ section[id="takeout"]{scroll-margin-top:112px}
 <section class="sec" id="review" style="padding-top:0">
 <div class="rv">
 <div class="rvtx">
-<div class="head"><div><h2 class="en mid fu" data-k="t100">Best review</h2><p data-k="t101">다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.</p></div></div>
+<div class="head"><div><h2 class="en mid fu" data-k="t101">Best review</h2><p data-k="t102">다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.</p></div></div>
 <div class="act"><a class="pill" href="#lunch">점심특선 보기</a></div>
 </div>
 <div class="clips">
@@ -418,103 +420,103 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="clip"><video aria-label="아이와 함께 온 손님의 온천장점 방문 리뷰 영상" controls="" playsinline="" poster="video/review-poster.jpg" preload="none">
 <source src="video/review.mp4" type="video/mp4"/>
 </video></div>
-<figcaption><small class="en" data-k="t102">With kids</small><b data-k="t103">“족발집에서 아이들이 사라진다”</b><span data-k="t104">아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.</span></figcaption>
+<figcaption><small class="en" data-k="t103">With kids</small><b data-k="t104">“족발집에서 아이들이 사라진다”</b><span data-k="t105">아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.</span></figcaption>
 </figure>
 <figure>
 <div class="clip"><video aria-label="점심특선을 먹어 본 손님의 온천장점 방문 리뷰 영상" controls="" playsinline="" poster="video/review2-poster.jpg" preload="none">
 <source src="video/review2.mp4" type="video/mp4"/>
 </video></div>
-<figcaption><small class="en" data-k="t105">Lunch set</small><b data-k="t106">“가성비 미친 점심특선”</b><span data-k="t107">족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.</span></figcaption>
+<figcaption><small class="en" data-k="t106">Lunch set</small><b data-k="t107">“가성비 미친 점심특선”</b><span data-k="t108">족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.</span></figcaption>
 </figure>
 </div>
 </div>
 </section>
 <section class="sec" id="space" style="padding-top:0">
 <div class="head">
-<div><h2 class="en mid fu" data-k="t108">The house</h2><p data-k="t109">1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.</p></div>
+<div><h2 class="en mid fu" data-k="t109">The house</h2><p data-k="t110">1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.</p></div>
 </div>
 <div class="strip tall bleed">
-<figure><img alt="홀 전경" src="img/hall2.jpg"/><figcaption><b data-k="t110">홀</b></figcaption></figure>
-<figure><img alt="창가 쪽 좌석" src="img/hall1.jpg"/><figcaption><b data-k="t111">창가 자리</b></figcaption></figure>
-<figure><img alt="안쪽 좌석" src="img/hall3.jpg"/><figcaption><b data-k="t112">안쪽 자리</b></figcaption></figure>
+<figure><img alt="홀 전경" decoding="async" loading="lazy" src="img/hall2.jpg"/><figcaption><b data-k="t111">홀</b></figcaption></figure>
+<figure><img alt="창가 쪽 좌석" decoding="async" loading="lazy" src="img/hall1.jpg"/><figcaption><b data-k="t112">창가 자리</b></figcaption></figure>
+<figure><img alt="안쪽 좌석" decoding="async" loading="lazy" src="img/hall3.jpg"/><figcaption><b data-k="t113">안쪽 자리</b></figcaption></figure>
 </div>
 <div class="kids" id="kids">
 <div class="ktx">
-<h3 class="en sub fu" data-k="t113">Kids room</h3>
-<p class="quote fu" data-k="t114">2층 놀이방, 내사랑친구집</p>
-<p class="fu" data-k="t115">식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.</p>
+<h3 class="en sub fu" data-k="t114">Kids room</h3>
+<p class="quote fu" data-k="t115">2층 놀이방, 내사랑친구집</p>
+<p class="fu" data-k="t116">식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.</p>
 </div>
 </div>
 <div class="strip bleed kstrip">
-<figure><img alt="미끄럼틀과 볼풀이 있는 2층 놀이시설" src="img/kids1.jpg"/><figcaption><b data-k="t116">미끄럼틀과 볼풀</b></figcaption></figure>
-<figure><img alt="레트로 오락기와 아이용 의자 두 개" src="img/kids2.jpg"/><figcaption><b data-k="t117">레트로 오락기</b></figcaption></figure>
-<figure><img alt="벽걸이 TV와 닌텐도 게임기가 있는 방" src="img/kids3.jpg"/><figcaption><b data-k="t118">닌텐도 게임방</b></figcaption></figure>
+<figure><img alt="미끄럼틀과 볼풀이 있는 2층 놀이시설" decoding="async" loading="lazy" src="img/kids1.jpg"/><figcaption><b data-k="t117">미끄럼틀과 볼풀</b></figcaption></figure>
+<figure><img alt="레트로 오락기와 아이용 의자 두 개" decoding="async" loading="lazy" src="img/kids2.jpg"/><figcaption><b data-k="t118">레트로 오락기</b></figcaption></figure>
+<figure><img alt="벽걸이 TV와 닌텐도 게임기가 있는 방" decoding="async" loading="lazy" src="img/kids3.jpg"/><figcaption><b data-k="t119">닌텐도 게임방</b></figcaption></figure>
 </div>
 </section>
 <section class="sec" id="story" style="padding-top:0">
 <div class="head">
-<div><h2 class="en mid fu" data-k="t119">Since 2008</h2><p data-k="t120">부산시청 앞 작은 가게에서 시작한 이야기</p></div>
+<div><h2 class="en mid fu" data-k="t120">Since 2008</h2><p data-k="t121">부산시청 앞 작은 가게에서 시작한 이야기</p></div>
 </div>
 <div class="story">
-<figure class="fu"><img alt="2008년 부산시청 앞 내사랑족발 본점 앞에서 줄을 서서 기다리는 손님들, 흑백 사진" src="img/story1.jpg"/><figcaption data-k="t121">2008년, 본점 앞에서 기다리던 손님들</figcaption></figure>
-<figure class="fu"><img alt="손님으로 가득 찬 내사랑족발 본점 홀, 흑백 사진" src="img/story2.jpg"/><figcaption data-k="t122">늘 사람이 모이던 본점 홀</figcaption></figure>
+<figure class="fu"><img alt="2008년 부산시청 앞 내사랑족발 본점 앞에서 줄을 서서 기다리는 손님들, 흑백 사진" decoding="async" loading="lazy" src="img/story1.jpg"/><figcaption data-k="t122">2008년, 본점 앞에서 기다리던 손님들</figcaption></figure>
+<figure class="fu"><img alt="손님으로 가득 찬 내사랑족발 본점 홀, 흑백 사진" decoding="async" loading="lazy" src="img/story2.jpg"/><figcaption data-k="t123">늘 사람이 모이던 본점 홀</figcaption></figure>
 </div>
-<p class="storytx fu" data-k="t123">앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.</p>
+<p class="storytx fu" data-k="t124">앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.</p>
 </section>
 <section class="sec faq" id="faq" style="padding-top:0">
-<div class="head"><h2 class="en mid fu" data-k="t124">FAQ</h2></div>
+<div class="head"><h2 class="en mid fu" data-k="t125">FAQ</h2></div>
 <details open="">
-<summary data-k="t125">쉬는 날이 있나요?</summary>
-<p data-k="t126">없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.</p>
+<summary data-k="t126">쉬는 날이 있나요?</summary>
+<p data-k="t127">없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.</p>
 </details>
 <details>
-<summary data-k="t127">불족발은 매운가요?</summary>
-<p data-k="t128">맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.</p>
+<summary data-k="t128">불족발은 매운가요?</summary>
+<p data-k="t129">맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.</p>
 </details>
 <details>
-<summary data-k="t129">점심특선은 언제 먹을 수 있나요?</summary>
-<p data-k="t130">365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.</p>
+<summary data-k="t130">점심특선은 언제 먹을 수 있나요?</summary>
+<p data-k="t131">365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.</p>
 </details>
 <details>
-<summary data-k="t131">아이와 같이 가도 되나요?</summary>
-<p data-k="t132">네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.</p>
+<summary data-k="t132">아이와 같이 가도 되나요?</summary>
+<p data-k="t133">네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.</p>
 </details>
 <details>
-<summary data-k="t133">포장하면 할인이 되나요?</summary>
-<p data-k="t134">포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.</p>
+<summary data-k="t134">포장하면 할인이 되나요?</summary>
+<p data-k="t135">포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.</p>
 </details>
 <details>
-<summary data-k="t135">단체로 가도 되나요?</summary>
-<p data-k="t136">네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.</p>
+<summary data-k="t136">단체로 가도 되나요?</summary>
+<p data-k="t137">네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.</p>
 </details>
 <details>
-<summary data-k="t137">주차할 수 있나요?</summary>
-<p data-k="t138">무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.</p>
+<summary data-k="t138">주차할 수 있나요?</summary>
+<p data-k="t139">무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.</p>
 </details>
 <details>
-<summary data-k="t139">리뷰 이벤트가 있나요?</summary>
-<p data-k="t140">네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.</p>
+<summary data-k="t140">리뷰 이벤트가 있나요?</summary>
+<p data-k="t141">네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.</p>
 </details>
 </section>
 </main>
 <footer class="site-foot" id="visit">
 <div class="fside">
-<img alt="해 질 무렵 불이 켜진 하트 모양 간판과 노란 외벽의 내사랑족발 온천장점 정면" class="ext" src="img/exterior5.jpg"/>
-<img alt="박동명의 내사랑족발 since 2008" class="logo" src="img/logo.jpg"/>
+<img alt="해 질 무렵 불이 켜진 하트 모양 간판과 노란 외벽의 내사랑족발 온천장점 정면" class="ext" decoding="async" loading="lazy" src="img/exterior5.jpg"/>
+<img alt="박동명의 내사랑족발 since 2008" class="logo" decoding="async" loading="lazy" src="img/logo.jpg"/>
 </div>
 <div>
-<h2 class="en mid" data-k="t141">Visit</h2>
+<h2 class="en mid" data-k="t142">Visit</h2>
 <div class="branch">
-<h3 class="shop"><span data-k="t142">온천장점</span><small data-k="t143">지금 보고 계신 매장, 2026년 2월 오픈</small></h3>
+<h3 class="shop"><span data-k="t143">온천장점</span><small data-k="t144">지금 보고 계신 매장, 2026년 2월 오픈</small></h3>
 <dl class="info">
-<dt data-k="t144">주소</dt><dd data-k="t145" id="addr">부산 동래구 금강로 135, 1층</dd>
-<dt data-k="t146">영업</dt><dd data-k="t147">매일 11:30 ~ 22:30, 연중무휴</dd>
-<dt data-k="t148">쉬는 시간</dt><dd data-k="t149">14:30 ~ 15:30 브레이크타임</dd>
-<dt data-k="t150">시설</dt><dd data-k="t151">2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도</dd>
-<dt data-k="t152">지하철</dt><dd data-k="t153">1호선 온천장역에서 걸어서 10분</dd>
-<dt data-k="t154">주차</dt><dd data-k="t155">무료 주차장 (혼잡 시 근처 유료주차장 이용)</dd>
-<dt data-k="t156">단체석</dt><dd data-k="t157">최대 30명</dd>
-<dt data-k="t158">전화</dt><dd data-k="t159">051-711-3848</dd>
+<dt data-k="t145">주소</dt><dd data-k="t146" id="addr">부산 동래구 금강로 135, 1층</dd>
+<dt data-k="t147">영업</dt><dd data-k="t148">매일 11:30 ~ 22:30, 연중무휴</dd>
+<dt data-k="t149">쉬는 시간</dt><dd data-k="t150">14:30 ~ 15:30 브레이크타임</dd>
+<dt data-k="t151">시설</dt><dd data-k="t152">2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도</dd>
+<dt data-k="t153">지하철</dt><dd data-k="t154">1호선 온천장역에서 걸어서 10분</dd>
+<dt data-k="t155">주차</dt><dd data-k="t156">무료 주차장 (혼잡 시 근처 유료주차장 이용)</dd>
+<dt data-k="t157">단체석</dt><dd data-k="t158">최대 30명</dd>
+<dt data-k="t159">전화</dt><dd data-k="t160">051-711-3848</dd>
 </dl>
 <div class="act">
 <a class="pill" data-default="https://naver.me/GOhvwcdF" data-href="naver" href="https://naver.me/GOhvwcdF" rel="noopener" target="_blank">네이버 지도에서 찾기</a>
@@ -522,16 +524,16 @@ section[id="takeout"]{scroll-margin-top:112px}
 <button class="pill ghost" id="copy" type="button">주소 복사</button>
 </div>
 </div>
-<h3 class="shop"><span data-k="t160">시청 본점</span><small data-k="t161">부산시청 앞, 2008년부터</small></h3>
+<h3 class="shop"><span data-k="t161">시청 본점</span><small data-k="t162">부산시청 앞, 2008년부터</small></h3>
 <dl class="info">
-<dt data-k="t162">주소</dt><dd data-k="t163">부산 연제구 신촌로 34-1</dd>
-<dt data-k="t164">전화</dt><dd data-k="t165">051-866-3848</dd>
+<dt data-k="t163">주소</dt><dd data-k="t164">부산 연제구 신촌로 34-1</dd>
+<dt data-k="t165">전화</dt><dd data-k="t166">051-866-3848</dd>
 </dl>
 <div class="act">
 <a class="pill ghost" data-default="https://naver.me/G4W5BwJR" data-href="main_naver" href="https://naver.me/G4W5BwJR" rel="noopener" target="_blank">본점 네이버 지도</a>
 </div>
 </div>
-<p class="fine" data-k="t166">내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.</p>
+<p class="fine" data-k="t167">내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.</p>
 </footer>
 <div class="dock"><div>
 <a class="dk" href="tel:0517113848">전화</a>
@@ -548,8 +550,8 @@ section[id="takeout"]{scroll-margin-top:112px}
 </header>
 <main id="top">
 <section class="sec hero">
-<div class="ttl"><h1 class="en big fu" data-k="t1" data-ml="">Boiled fresh<br/>every day</h1>
-<p class="lede fu" data-k="t2">매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점</p></div>
+<div class="ttl"><p class="en big fu" data-k="t1" data-ml="">Boiled fresh<br/>every day</p>
+<h1 class="lede fu" data-k="t2">매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점</h1></div>
 <div class="film bleed">
 <video aria-label="갓 삶아 김이 나는 족발과 칼로 얇게 써는 모습을 매장에서 찍은 영상" autoplay="" id="film" loop="" muted="" playsinline="" poster="video/real-poster.jpg" preload="metadata">
 <source src="video/real.mp4" type="video/mp4"/>
@@ -604,16 +606,16 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="ctl"><button aria-label="이전 사진" data-for="food" data-go="-1" type="button">‹</button><button aria-label="다음 사진" data-for="food" data-go="1" type="button">›</button></div>
 </div>
 <div class="strip bleed" id="food">
-<figure><img alt="족발" src="img/n-jokbal.jpg"/><figcaption><b data-k="t48">족발</b><span data-k="t49">38,000원부터</span></figcaption></figure>
-<figure><img alt="보쌈과 보쌈김치" src="img/n-bossam.jpg"/><figcaption><b data-k="t50">보쌈</b><span data-k="t51">38,000원부터</span></figcaption></figure>
-<figure><img alt="냉채족발" src="img/n-naengchae.jpg"/><figcaption><b data-k="t52">냉채족발</b><span data-k="t53">40,000원부터</span></figcaption></figure>
-<figure><img alt="불족발" src="img/n-buljok.jpg"/><figcaption><b data-k="t54">불족발</b><span data-k="t55">40,000원부터</span></figcaption></figure>
+<figure><img alt="족발" decoding="async" loading="lazy" src="img/n-jokbal.jpg"/><figcaption><b data-k="t48">족발</b><span data-k="t49">38,000원부터</span></figcaption></figure>
+<figure><img alt="보쌈과 보쌈김치" decoding="async" loading="lazy" src="img/n-bossam.jpg"/><figcaption><b data-k="t50">보쌈</b><span data-k="t51">38,000원부터</span></figcaption></figure>
+<figure><img alt="냉채족발" decoding="async" loading="lazy" src="img/n-naengchae.jpg"/><figcaption><b data-k="t52">냉채족발</b><span data-k="t53">40,000원부터</span></figcaption></figure>
+<figure><img alt="불족발" decoding="async" loading="lazy" src="img/n-buljok.jpg"/><figcaption><b data-k="t54">불족발</b><span data-k="t55">40,000원부터</span></figcaption></figure>
 </div>
 <div class="cols">
 <div class="fu">
 <h3 class="en sub" data-k="t56">Half &amp; half</h3>
 <p data-k="t57">두 가지를 골라 한 접시에. 둘이서 가장 많이 찾습니다.</p>
-<figure class="sidepic"><img alt="보쌈과 불족발 반반 한 접시" src="img/n-half.jpg"/><figcaption data-k="t58">보쌈 + 불족발</figcaption></figure>
+<figure class="sidepic"><img alt="보쌈과 불족발 반반 한 접시" decoding="async" loading="lazy" src="img/n-half.jpg"/><figcaption data-k="t58">보쌈 + 불족발</figcaption></figure>
 <dl class="list">
 <dt data-k="t59">족발 + 보쌈</dt><dd data-k="t60">44,000</dd>
 <dt data-k="t61">족발 + 불족발</dt><dd data-k="t62">45,000</dd>
@@ -627,31 +629,32 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="fu" id="lunch">
 <h3 class="en sub" data-k="t74">Lunch</h3>
 <div class="en num" data-k="t75">14,000</div>
-<figure class="sidepic"><img alt="족발 접시와 황태해장국, 계란찜, 공기밥이 놓인 점심특선 한 상" src="img/n-lunch.jpg"/><figcaption data-k="t76">점심특선 한 상 (족발 선택)</figcaption></figure>
-<p data-k="t77">점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다. 2인 이상 주문하면 미니 막국수도 나옵니다.</p>
+<p class="perk" data-k="t76">2인 이상 주문하면 미니 막국수 서비스</p>
+<figure class="sidepic"><img alt="족발 접시와 황태해장국, 계란찜, 공기밥이 놓인 점심특선 한 상" decoding="async" loading="lazy" src="img/n-lunch.jpg"/><figcaption data-k="t77">점심특선 한 상 (족발 선택)</figcaption></figure>
+<p data-k="t78">점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다.</p>
 </div>
 <div class="fu">
-<h3 class="en sub" data-k="t78">Sides</h3>
-<p data-k="t79">같이 시키면 좋은 것들.</p>
-<div class="sidepics"><figure class="sidepic"><img alt="뚝배기 황태해장국" src="img/n-hwangtae.jpg"/><figcaption data-k="t80">황태해장국</figcaption></figure><figure class="sidepic"><img alt="쟁반막국수" src="img/n-noodle.jpg"/><figcaption data-k="t81">쟁반막국수</figcaption></figure><figure class="sidepic"><img alt="김가루와 마요네즈를 올린 셀프주먹밥" src="img/n-rice.jpg"/><figcaption data-k="t82">셀프주먹밥</figcaption></figure></div>
+<h3 class="en sub" data-k="t79">Sides</h3>
+<p data-k="t80">같이 시키면 좋은 것들.</p>
+<div class="sidepics"><figure class="sidepic"><img alt="뚝배기 황태해장국" decoding="async" loading="lazy" src="img/n-hwangtae.jpg"/><figcaption data-k="t81">황태해장국</figcaption></figure><figure class="sidepic"><img alt="쟁반막국수" decoding="async" loading="lazy" src="img/n-noodle.jpg"/><figcaption data-k="t82">쟁반막국수</figcaption></figure><figure class="sidepic"><img alt="김가루와 마요네즈를 올린 셀프주먹밥" decoding="async" loading="lazy" src="img/n-rice.jpg"/><figcaption data-k="t83">셀프주먹밥</figcaption></figure></div>
 <dl class="list">
-<dt data-k="t83">황태해장국</dt><dd data-k="t84">6,000</dd>
-<dt data-k="t85">쟁반막국수</dt><dd data-k="t86">6,000</dd>
-<dt data-k="t87">미니족</dt><dd data-k="t88">13,000</dd>
-<dt data-k="t89">셀프주먹밥</dt><dd data-k="t90">3,000</dd>
-<dt data-k="t91">보쌈김치</dt><dd data-k="t92">4,000</dd>
-<dt><span data-k="t93">고기 추가</span><small data-k="t94">족발, 보쌈</small></dt><dd data-k="t95">18,000</dd>
+<dt data-k="t84">황태해장국</dt><dd data-k="t85">6,000</dd>
+<dt data-k="t86">쟁반막국수</dt><dd data-k="t87">6,000</dd>
+<dt data-k="t88">미니족</dt><dd data-k="t89">13,000</dd>
+<dt data-k="t90">셀프주먹밥</dt><dd data-k="t91">3,000</dd>
+<dt data-k="t92">보쌈김치</dt><dd data-k="t93">4,000</dd>
+<dt><span data-k="t94">고기 추가</span><small data-k="t95">족발, 보쌈</small></dt><dd data-k="t96">18,000</dd>
 </dl>
 </div>
 </div>
 </section>
 <section class="sec" id="takeout" style="padding-top:0">
 <div class="tk">
-<figure class="fu"><img alt="포장 용기에 담긴 불족발과 족발" src="img/takeout.jpg"/><figcaption data-k="t96">포장해 간 불족발과 족발</figcaption></figure>
+<figure class="fu"><img alt="포장 용기에 담긴 불족발과 족발" decoding="async" loading="lazy" src="img/takeout.jpg"/><figcaption data-k="t97">포장해 간 불족발과 족발</figcaption></figure>
 <div class="tktx">
-<h2 class="en mid fu" data-k="t97">Takeout</h2>
-<p class="quote fu" data-k="t98">포장하면 2,000원 할인</p>
-<p class="fu" data-k="t99">전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.</p>
+<h2 class="en mid fu" data-k="t98">Takeout</h2>
+<p class="quote fu" data-k="t99">포장하면 2,000원 할인</p>
+<p class="fu" data-k="t100">전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.</p>
 <div class="act">
 <a class="pill" href="tel:0517113848">전화로 포장 주문</a>
 <a class="pill ghost" data-default="https://s.baemin.com/Y4000AIeibj3y" data-href="baemin" href="https://s.baemin.com/Y4000AIeibj3y" rel="noopener" target="_blank">배달의민족</a>
@@ -663,7 +666,7 @@ section[id="takeout"]{scroll-margin-top:112px}
 <section class="sec" id="review" style="padding-top:0">
 <div class="rv">
 <div class="rvtx">
-<div class="head"><div><h2 class="en mid fu" data-k="t100">Best review</h2><p data-k="t101">다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.</p></div></div>
+<div class="head"><div><h2 class="en mid fu" data-k="t101">Best review</h2><p data-k="t102">다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.</p></div></div>
 <div class="act"><a class="pill" href="#lunch">점심특선 보기</a></div>
 </div>
 <div class="clips">
@@ -671,103 +674,103 @@ section[id="takeout"]{scroll-margin-top:112px}
 <div class="clip"><video aria-label="아이와 함께 온 손님의 온천장점 방문 리뷰 영상" controls="" playsinline="" poster="video/review-poster.jpg" preload="none">
 <source src="video/review.mp4" type="video/mp4"/>
 </video></div>
-<figcaption><small class="en" data-k="t102">With kids</small><b data-k="t103">“족발집에서 아이들이 사라진다”</b><span data-k="t104">아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.</span></figcaption>
+<figcaption><small class="en" data-k="t103">With kids</small><b data-k="t104">“족발집에서 아이들이 사라진다”</b><span data-k="t105">아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.</span></figcaption>
 </figure>
 <figure>
 <div class="clip"><video aria-label="점심특선을 먹어 본 손님의 온천장점 방문 리뷰 영상" controls="" playsinline="" poster="video/review2-poster.jpg" preload="none">
 <source src="video/review2.mp4" type="video/mp4"/>
 </video></div>
-<figcaption><small class="en" data-k="t105">Lunch set</small><b data-k="t106">“가성비 미친 점심특선”</b><span data-k="t107">족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.</span></figcaption>
+<figcaption><small class="en" data-k="t106">Lunch set</small><b data-k="t107">“가성비 미친 점심특선”</b><span data-k="t108">족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.</span></figcaption>
 </figure>
 </div>
 </div>
 </section>
 <section class="sec" id="space" style="padding-top:0">
 <div class="head">
-<div><h2 class="en mid fu" data-k="t108">The house</h2><p data-k="t109">1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.</p></div>
+<div><h2 class="en mid fu" data-k="t109">The house</h2><p data-k="t110">1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.</p></div>
 </div>
 <div class="strip tall bleed">
-<figure><img alt="홀 전경" src="img/hall2.jpg"/><figcaption><b data-k="t110">홀</b></figcaption></figure>
-<figure><img alt="창가 쪽 좌석" src="img/hall1.jpg"/><figcaption><b data-k="t111">창가 자리</b></figcaption></figure>
-<figure><img alt="안쪽 좌석" src="img/hall3.jpg"/><figcaption><b data-k="t112">안쪽 자리</b></figcaption></figure>
+<figure><img alt="홀 전경" decoding="async" loading="lazy" src="img/hall2.jpg"/><figcaption><b data-k="t111">홀</b></figcaption></figure>
+<figure><img alt="창가 쪽 좌석" decoding="async" loading="lazy" src="img/hall1.jpg"/><figcaption><b data-k="t112">창가 자리</b></figcaption></figure>
+<figure><img alt="안쪽 좌석" decoding="async" loading="lazy" src="img/hall3.jpg"/><figcaption><b data-k="t113">안쪽 자리</b></figcaption></figure>
 </div>
 <div class="kids" id="kids">
 <div class="ktx">
-<h3 class="en sub fu" data-k="t113">Kids room</h3>
-<p class="quote fu" data-k="t114">2층 놀이방, 내사랑친구집</p>
-<p class="fu" data-k="t115">식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.</p>
+<h3 class="en sub fu" data-k="t114">Kids room</h3>
+<p class="quote fu" data-k="t115">2층 놀이방, 내사랑친구집</p>
+<p class="fu" data-k="t116">식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.</p>
 </div>
 </div>
 <div class="strip bleed kstrip">
-<figure><img alt="미끄럼틀과 볼풀이 있는 2층 놀이시설" src="img/kids1.jpg"/><figcaption><b data-k="t116">미끄럼틀과 볼풀</b></figcaption></figure>
-<figure><img alt="레트로 오락기와 아이용 의자 두 개" src="img/kids2.jpg"/><figcaption><b data-k="t117">레트로 오락기</b></figcaption></figure>
-<figure><img alt="벽걸이 TV와 닌텐도 게임기가 있는 방" src="img/kids3.jpg"/><figcaption><b data-k="t118">닌텐도 게임방</b></figcaption></figure>
+<figure><img alt="미끄럼틀과 볼풀이 있는 2층 놀이시설" decoding="async" loading="lazy" src="img/kids1.jpg"/><figcaption><b data-k="t117">미끄럼틀과 볼풀</b></figcaption></figure>
+<figure><img alt="레트로 오락기와 아이용 의자 두 개" decoding="async" loading="lazy" src="img/kids2.jpg"/><figcaption><b data-k="t118">레트로 오락기</b></figcaption></figure>
+<figure><img alt="벽걸이 TV와 닌텐도 게임기가 있는 방" decoding="async" loading="lazy" src="img/kids3.jpg"/><figcaption><b data-k="t119">닌텐도 게임방</b></figcaption></figure>
 </div>
 </section>
 <section class="sec" id="story" style="padding-top:0">
 <div class="head">
-<div><h2 class="en mid fu" data-k="t119">Since 2008</h2><p data-k="t120">부산시청 앞 작은 가게에서 시작한 이야기</p></div>
+<div><h2 class="en mid fu" data-k="t120">Since 2008</h2><p data-k="t121">부산시청 앞 작은 가게에서 시작한 이야기</p></div>
 </div>
 <div class="story">
-<figure class="fu"><img alt="2008년 부산시청 앞 내사랑족발 본점 앞에서 줄을 서서 기다리는 손님들, 흑백 사진" src="img/story1.jpg"/><figcaption data-k="t121">2008년, 본점 앞에서 기다리던 손님들</figcaption></figure>
-<figure class="fu"><img alt="손님으로 가득 찬 내사랑족발 본점 홀, 흑백 사진" src="img/story2.jpg"/><figcaption data-k="t122">늘 사람이 모이던 본점 홀</figcaption></figure>
+<figure class="fu"><img alt="2008년 부산시청 앞 내사랑족발 본점 앞에서 줄을 서서 기다리는 손님들, 흑백 사진" decoding="async" loading="lazy" src="img/story1.jpg"/><figcaption data-k="t122">2008년, 본점 앞에서 기다리던 손님들</figcaption></figure>
+<figure class="fu"><img alt="손님으로 가득 찬 내사랑족발 본점 홀, 흑백 사진" decoding="async" loading="lazy" src="img/story2.jpg"/><figcaption data-k="t123">늘 사람이 모이던 본점 홀</figcaption></figure>
 </div>
-<p class="storytx fu" data-k="t123">앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.</p>
+<p class="storytx fu" data-k="t124">앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.</p>
 </section>
 <section class="sec faq" id="faq" style="padding-top:0">
-<div class="head"><h2 class="en mid fu" data-k="t124">FAQ</h2></div>
+<div class="head"><h2 class="en mid fu" data-k="t125">FAQ</h2></div>
 <details open="">
-<summary data-k="t125">쉬는 날이 있나요?</summary>
-<p data-k="t126">없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.</p>
+<summary data-k="t126">쉬는 날이 있나요?</summary>
+<p data-k="t127">없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.</p>
 </details>
 <details>
-<summary data-k="t127">불족발은 매운가요?</summary>
-<p data-k="t128">맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.</p>
+<summary data-k="t128">불족발은 매운가요?</summary>
+<p data-k="t129">맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.</p>
 </details>
 <details>
-<summary data-k="t129">점심특선은 언제 먹을 수 있나요?</summary>
-<p data-k="t130">365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.</p>
+<summary data-k="t130">점심특선은 언제 먹을 수 있나요?</summary>
+<p data-k="t131">365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.</p>
 </details>
 <details>
-<summary data-k="t131">아이와 같이 가도 되나요?</summary>
-<p data-k="t132">네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.</p>
+<summary data-k="t132">아이와 같이 가도 되나요?</summary>
+<p data-k="t133">네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.</p>
 </details>
 <details>
-<summary data-k="t133">포장하면 할인이 되나요?</summary>
-<p data-k="t134">포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.</p>
+<summary data-k="t134">포장하면 할인이 되나요?</summary>
+<p data-k="t135">포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.</p>
 </details>
 <details>
-<summary data-k="t135">단체로 가도 되나요?</summary>
-<p data-k="t136">네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.</p>
+<summary data-k="t136">단체로 가도 되나요?</summary>
+<p data-k="t137">네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.</p>
 </details>
 <details>
-<summary data-k="t137">주차할 수 있나요?</summary>
-<p data-k="t138">무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.</p>
+<summary data-k="t138">주차할 수 있나요?</summary>
+<p data-k="t139">무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.</p>
 </details>
 <details>
-<summary data-k="t139">리뷰 이벤트가 있나요?</summary>
-<p data-k="t140">네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.</p>
+<summary data-k="t140">리뷰 이벤트가 있나요?</summary>
+<p data-k="t141">네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.</p>
 </details>
 </section>
 </main>
 <footer class="site-foot" id="visit">
 <div class="fside">
-<img alt="해 질 무렵 불이 켜진 하트 모양 간판과 노란 외벽의 내사랑족발 온천장점 정면" class="ext" src="img/exterior5.jpg"/>
-<img alt="박동명의 내사랑족발 since 2008" class="logo" src="img/logo.jpg"/>
+<img alt="해 질 무렵 불이 켜진 하트 모양 간판과 노란 외벽의 내사랑족발 온천장점 정면" class="ext" decoding="async" loading="lazy" src="img/exterior5.jpg"/>
+<img alt="박동명의 내사랑족발 since 2008" class="logo" decoding="async" loading="lazy" src="img/logo.jpg"/>
 </div>
 <div>
-<h2 class="en mid" data-k="t141">Visit</h2>
+<h2 class="en mid" data-k="t142">Visit</h2>
 <div class="branch">
-<h3 class="shop"><span data-k="t142">온천장점</span><small data-k="t143">지금 보고 계신 매장, 2026년 2월 오픈</small></h3>
+<h3 class="shop"><span data-k="t143">온천장점</span><small data-k="t144">지금 보고 계신 매장, 2026년 2월 오픈</small></h3>
 <dl class="info">
-<dt data-k="t144">주소</dt><dd data-k="t145" id="addr">부산 동래구 금강로 135, 1층</dd>
-<dt data-k="t146">영업</dt><dd data-k="t147">매일 11:30 ~ 22:30, 연중무휴</dd>
-<dt data-k="t148">쉬는 시간</dt><dd data-k="t149">14:30 ~ 15:30 브레이크타임</dd>
-<dt data-k="t150">시설</dt><dd data-k="t151">2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도</dd>
-<dt data-k="t152">지하철</dt><dd data-k="t153">1호선 온천장역에서 걸어서 10분</dd>
-<dt data-k="t154">주차</dt><dd data-k="t155">무료 주차장 (혼잡 시 근처 유료주차장 이용)</dd>
-<dt data-k="t156">단체석</dt><dd data-k="t157">최대 30명</dd>
-<dt data-k="t158">전화</dt><dd data-k="t159">051-711-3848</dd>
+<dt data-k="t145">주소</dt><dd data-k="t146" id="addr">부산 동래구 금강로 135, 1층</dd>
+<dt data-k="t147">영업</dt><dd data-k="t148">매일 11:30 ~ 22:30, 연중무휴</dd>
+<dt data-k="t149">쉬는 시간</dt><dd data-k="t150">14:30 ~ 15:30 브레이크타임</dd>
+<dt data-k="t151">시설</dt><dd data-k="t152">2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도</dd>
+<dt data-k="t153">지하철</dt><dd data-k="t154">1호선 온천장역에서 걸어서 10분</dd>
+<dt data-k="t155">주차</dt><dd data-k="t156">무료 주차장 (혼잡 시 근처 유료주차장 이용)</dd>
+<dt data-k="t157">단체석</dt><dd data-k="t158">최대 30명</dd>
+<dt data-k="t159">전화</dt><dd data-k="t160">051-711-3848</dd>
 </dl>
 <div class="act">
 <a class="pill" data-default="https://naver.me/GOhvwcdF" data-href="naver" href="https://naver.me/GOhvwcdF" rel="noopener" target="_blank">네이버 지도에서 찾기</a>
@@ -775,16 +778,16 @@ section[id="takeout"]{scroll-margin-top:112px}
 <button class="pill ghost" id="copy" type="button">주소 복사</button>
 </div>
 </div>
-<h3 class="shop"><span data-k="t160">시청 본점</span><small data-k="t161">부산시청 앞, 2008년부터</small></h3>
+<h3 class="shop"><span data-k="t161">시청 본점</span><small data-k="t162">부산시청 앞, 2008년부터</small></h3>
 <dl class="info">
-<dt data-k="t162">주소</dt><dd data-k="t163">부산 연제구 신촌로 34-1</dd>
-<dt data-k="t164">전화</dt><dd data-k="t165">051-866-3848</dd>
+<dt data-k="t163">주소</dt><dd data-k="t164">부산 연제구 신촌로 34-1</dd>
+<dt data-k="t165">전화</dt><dd data-k="t166">051-866-3848</dd>
 </dl>
 <div class="act">
 <a class="pill ghost" data-default="https://naver.me/G4W5BwJR" data-href="main_naver" href="https://naver.me/G4W5BwJR" rel="noopener" target="_blank">본점 네이버 지도</a>
 </div>
 </div>
-<p class="fine" data-k="t166">내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.</p>
+<p class="fine" data-k="t167">내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.</p>
 </footer>
 <div class="dock"><div>
 <a class="dk" href="tel:0517113848">전화</a>
@@ -804,7 +807,7 @@ section[id="takeout"]{scroll-margin-top:112px}
   state.text = state.text || {}; state.links = state.links || {};
   var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
   var defaults = {}, editing = false, art = null, ui = null;
-  var EN = {"매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점": "Jokbal and bossam, boiled in-house every day. Naesarang Jokbal, Oncheonjang.", "오시는 길": "Find us", "족발은 앞다리만 씁니다. 매일 매장에서 직접 삶고, 반찬과 소스까지 전부 직접 만듭니다.": "We use front trotters only. Everything is boiled in the shop each day, and every side dish and sauce is made in-house.", "중 2~3인, 대 3~4인, 특대 4~5인 기준": "Medium serves 2 to 3, large 3 to 4, extra large 4 to 5", "족발": "Jokbal", "Jokbal": "Braised pig's trotters", "보쌈": "Bossam", "Bossam": "Boiled pork wraps", "냉채족발": "Naengchae jokbal", "Naengchae": "Chilled trotters with mustard sauce", "불족발": "Bul-jokbal", "Bul-jokbal": "Charcoal-grilled trotters", "중": "Medium", "대": "Large", "특대": "Extra large", "가장 기본이고 가장 많이 찾는 메뉴. 족발 국내산": "The classic, and the one most people order. Trotters from Korea.", "부드러운 수육과 신선한 쌈채소. 삼겹살 칠레산": "Tender boiled pork with fresh wrap greens. Pork belly from Chile.", "새콤달콤한 특제 소스와 신선한 야채. 족발 국내산": "Sweet and tangy house sauce with fresh vegetables. Trotters from Korea.", "참숯에 구워 불향을 입혔습니다. 맵지 않습니다. 족발 국내산": "Grilled over charcoal for a smoky flavor. Not spicy. Trotters from Korea.", "옆으로 넘겨 보세요": "Swipe sideways", "38,000원부터": "from ₩38,000", "40,000원부터": "from ₩40,000", "6,000원": "₩6,000", "황태해장국": "Dried pollack soup", "두 가지를 골라 한 접시에. 둘이서 가장 많이 찾습니다.": "Pick two on one plate. The favorite for two people.", "족발 + 보쌈": "Jokbal + Bossam", "족발 + 불족발": "Jokbal + Bul-jokbal", "족발 + 냉채족발": "Jokbal + Naengchae jokbal", "보쌈 + 불족발": "Bossam + Bul-jokbal", "보쌈 + 냉채족발": "Bossam + Naengchae jokbal", "불족발 + 냉채족발": "Bul-jokbal + Naengchae jokbal", "시그니처 반반반": "Signature trio", "같이 시키면 좋은 것들.": "Good things to add.", "쟁반막국수": "Spicy buckwheat noodle platter", "미니족": "Mini trotters", "셀프주먹밥": "DIY rice balls", "보쌈김치": "Bossam kimchi", "고기 추가": "Extra meat", "족발, 보쌈": "jokbal or bossam", "나무로 짠 박스 안에서 먹는 밥집. 아이들 놀이방이 있습니다.": "Dine inside warm wooden booths. There is a playroom for kids.", "홀": "Main hall", "창가 자리": "Window seats", "안쪽 자리": "Inner seats", "“족발집에서 아이들이 사라진다”": "“At this jokbal place, the kids disappear”", "아이와 함께 온 손님이 직접 찍어 올린 방문 영상입니다. 아이들은 2층 놀이방으로 올라가고, 어른들은 점심특선을 천천히 먹습니다.": "A video filmed and posted by a guest who came with a child. The kids head up to the playroom on the second floor while the grown-ups take their time over the lunch set.", "재생 버튼을 누르면 소리와 함께 나옵니다. 39초.": "Press play to watch with sound. 39 seconds, in Korean.", "점심특선 보기": "See the lunch set", "네이버에서 리뷰 더 보기": "More reviews on Naver", "쉬는 날이 있나요?": "Are you ever closed?", "없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.": "No. We are open every day of the year from 11:30 to 22:30, with a break from 14:30 to 15:30.", "불족발은 매운가요?": "Is the bul-jokbal spicy?", "맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.": "No. It is jokbal grilled over charcoal for a smoky flavor.", "점심특선은 언제 먹을 수 있나요?": "When is the lunch set available?", "365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.": "Every day of the year from 11:30 to 14:30. ₩14,000 per person.", "아이와 같이 가도 되나요?": "Can I bring children?", "네. 2층에 아이들 놀이방(내사랑친구집)이 있습니다.": "Yes. There is a kids' playroom on the second floor.", "포장하면 할인이 되나요?": "Is there a discount for takeout?", "포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.": "Takeout orders are ₩2,000 off. The value jokbal is excluded.", "주차할 수 있나요?": "Is there parking?", "리뷰 이벤트가 있나요?": "Is there a review event?", "온천장점": "Oncheonjang branch", "지금 보고 계신 매장, 2026년 2월 오픈": "this location, opened February 2026", "주소": "Address", "부산 동래구 금강로 135, 1층": "1F, 135 Geumgang-ro, Dongnae-gu, Busan", "영업": "Hours", "매일 11:30 ~ 22:30, 연중무휴": "Daily 11:30 to 22:30, open all year", "쉬는 시간": "Break", "14:30 ~ 15:30 브레이크타임": "14:30 to 15:30", "시설": "Facilities", "2층 아이들 놀이방 (내사랑친구집)": "Kids' playroom on the 2nd floor", "지하철": "Subway", "1호선 온천장역에서 걸어서 10분": "10-minute walk from Oncheonjang Station, Line 1", "주차": "Parking", "전화": "Phone", "네이버 지도에서 찾기": "Open in Naver Map", "주소 복사": "Copy address", "복사했습니다": "Copied", "주소를 선택했습니다": "Address selected", "배달의민족 주문": "Order on Baemin", "쿠팡이츠 주문": "Order on Coupang Eats", "시청 본점": "City Hall main store", "부산시청 앞, 2008년부터": "across from Busan City Hall, since 2008", "부산 연제구 신촌로 34-1": "34-1 Sinchon-ro, Yeonje-gu, Busan", "본점 네이버 지도": "Main store on Naver Map", "길찾기": "Directions", "메뉴": "Menu", "“가성비 미친 점심특선”": "“A crazy good value lunch set”", "다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.": "Filmed by guests who came to eat. Tap to watch with sound. In Korean.", "아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.": "The kids head up to the 2nd-floor playroom, and the grown-ups get to eat while it is still warm.", "2층 놀이방 오락기": "Arcade machine in the 2nd-floor playroom", "2층 아이들 놀이방 (내사랑친구집), 오락기": "Kids' playroom on the 2nd floor: slide, ball pit, arcade, Nintendo", "네. 2층에 아이들 놀이방(내사랑친구집)이 있고, 오락기도 있습니다.": "Yes. There is a kids' playroom on the second floor, with an arcade machine.", "나무로 짠 박스 안에서 먹는 밥집. 2층에는 오락기가 있는 아이들 놀이방이 있습니다.": "Dine inside warm wooden booths. Upstairs there is a kids' playroom with an arcade machine.", "1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.": "The 1st-floor dining hall, with warm wooden booths.", "2층 놀이방, 내사랑친구집": "Kids' playroom on the 2nd floor", "식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.": "It is on a separate floor from the dining hall. The kids play upstairs while the grown-ups eat in peace downstairs.", "추억의 오락기": "Retro arcade machine", "아이용 의자와 쉬는 소파": "Kid-sized chairs and a sofa", "2008년 부산시청 앞 본점에서 시작했습니다. 앞다리만 골라 매일 직접 삶아 온 그 족발을, 온천장점에서도 맛 보세요.": "We started in 2008 across from Busan City Hall. Come taste the same jokbal in Oncheonjang, front trotters only and boiled in-house every day.", "한 접시에 여러 가지": "Several kinds on one plate", "점심특선에 나오는 계란찜": "Steamed egg, served with the lunch set", "부산시청 앞 작은 가게에서 시작한 이야기": "It began in a small shop across from Busan City Hall", "2008년, 본점 앞에서 기다리던 손님들": "2008. Guests waiting outside the main store", "늘 사람이 모이던 본점 홀": "The main store hall, always full", "앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.": "Front trotters only, boiled in-house every day, just as in 2008. Since February 2026, the same jokbal is served in Oncheonjang.", "미끄럼틀과 볼풀": "Slide and ball pit", "레트로 오락기": "Retro arcade machine", "닌텐도 게임방": "Nintendo game room", "2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도": "Kids' playroom on the 2nd floor: slide, ball pit, arcade, Nintendo", "네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.": "Yes. The 2nd-floor kids' playroom has a slide, a ball pit, a retro arcade machine and a Nintendo game room.", "전화하기": "Call us", "메뉴 이름을 누르면 영어로 보입니다": "Tap a name to see it in English", "네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.": "Write a Naver review and get a can of soft drink on the house. Please call a staff member before you write it.", "무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.": "There is a free parking lot. When it is full, please use a paid lot nearby. By subway, we are about a 10-minute walk from Oncheonjang Station on Line 1.", "무료 주차장 (혼잡 시 근처 유료주차장 이용)": "Free parking lot (paid lots nearby when full)", "단체석": "Groups", "최대 30명": "Up to 30 people", "단체로 가도 되나요?": "Can we come as a group?", "네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.": "Yes. We can seat up to 30 people together. For a large party, please call ahead.", "점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다. 2인 이상 주문하면 미니 막국수도 나옵니다.": "Lunch set, price per person. Available every day from 11:30 to 14:30. Choose jokbal, bossam or bul-jokbal; each comes with dried pollack soup, steamed egg and rice. Orders for two or more also get mini buckwheat noodles.", "족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.": "Jokbal with dried pollack soup, steamed egg and rice. The whole ₩14,000 set, finished to the last bite.", "네 가지 중 세 가지 선택, 3~4인": "pick three of the four, serves 3 to 4", "점심특선 한 상 (족발 선택)": "The lunch set (with jokbal)", "주문": "Order", "포장해 간 불족발과 족발": "Bul-jokbal and jokbal, packed to go", "포장하면 2,000원 할인": "₩2,000 off when you take out", "전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.": "Call ahead and your order will be ready when you arrive. The value jokbal is not included in the discount. For delivery, order on Baemin or Coupang Eats.", "전화로 포장 주문": "Call to order takeout", "배달의민족": "Baemin", "쿠팡이츠": "Coupang Eats", "번호를 복사했습니다": "number copied", "결정은 언제나 이 손 위에서 내려집니다": "Every decision is made by these hands", "내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.": "Naesarang Jokbal Oncheonjang, Neo Brothers Co., Ltd. The menu photos and the exterior photo are AI-styled images based on real photos and may differ from the real thing. The top video, takeout, dining room and playroom photos and the review videos are real footage. Prices may change."};
+  var EN = {"매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점": "Jokbal and bossam, boiled in-house every day. Naesarang Jokbal, Oncheonjang.", "오시는 길": "Find us", "족발은 앞다리만 씁니다. 매일 매장에서 직접 삶고, 반찬과 소스까지 전부 직접 만듭니다.": "We use front trotters only. Everything is boiled in the shop each day, and every side dish and sauce is made in-house.", "중 2~3인, 대 3~4인, 특대 4~5인 기준": "Medium serves 2 to 3, large 3 to 4, extra large 4 to 5", "족발": "Jokbal", "Jokbal": "Braised pig's trotters", "보쌈": "Bossam", "Bossam": "Boiled pork wraps", "냉채족발": "Naengchae jokbal", "Naengchae": "Chilled trotters with mustard sauce", "불족발": "Bul-jokbal", "Bul-jokbal": "Charcoal-grilled trotters", "중": "Medium", "대": "Large", "특대": "Extra large", "가장 기본이고 가장 많이 찾는 메뉴. 족발 국내산": "The classic, and the one most people order. Trotters from Korea.", "부드러운 수육과 신선한 쌈채소. 삼겹살 칠레산": "Tender boiled pork with fresh wrap greens. Pork belly from Chile.", "새콤달콤한 특제 소스와 신선한 야채. 족발 국내산": "Sweet and tangy house sauce with fresh vegetables. Trotters from Korea.", "참숯에 구워 불향을 입혔습니다. 맵지 않습니다. 족발 국내산": "Grilled over charcoal for a smoky flavor. Not spicy. Trotters from Korea.", "옆으로 넘겨 보세요": "Swipe sideways", "38,000원부터": "from ₩38,000", "40,000원부터": "from ₩40,000", "6,000원": "₩6,000", "황태해장국": "Dried pollack soup", "두 가지를 골라 한 접시에. 둘이서 가장 많이 찾습니다.": "Pick two on one plate. The favorite for two people.", "족발 + 보쌈": "Jokbal + Bossam", "족발 + 불족발": "Jokbal + Bul-jokbal", "족발 + 냉채족발": "Jokbal + Naengchae jokbal", "보쌈 + 불족발": "Bossam + Bul-jokbal", "보쌈 + 냉채족발": "Bossam + Naengchae jokbal", "불족발 + 냉채족발": "Bul-jokbal + Naengchae jokbal", "시그니처 반반반": "Signature trio", "같이 시키면 좋은 것들.": "Good things to add.", "쟁반막국수": "Spicy buckwheat noodle platter", "미니족": "Mini trotters", "셀프주먹밥": "DIY rice balls", "보쌈김치": "Bossam kimchi", "고기 추가": "Extra meat", "족발, 보쌈": "jokbal or bossam", "나무로 짠 박스 안에서 먹는 밥집. 아이들 놀이방이 있습니다.": "Dine inside warm wooden booths. There is a playroom for kids.", "홀": "Main hall", "창가 자리": "Window seats", "안쪽 자리": "Inner seats", "“족발집에서 아이들이 사라진다”": "“At this jokbal place, the kids disappear”", "아이와 함께 온 손님이 직접 찍어 올린 방문 영상입니다. 아이들은 2층 놀이방으로 올라가고, 어른들은 점심특선을 천천히 먹습니다.": "A video filmed and posted by a guest who came with a child. The kids head up to the playroom on the second floor while the grown-ups take their time over the lunch set.", "재생 버튼을 누르면 소리와 함께 나옵니다. 39초.": "Press play to watch with sound. 39 seconds, in Korean.", "점심특선 보기": "See the lunch set", "네이버에서 리뷰 더 보기": "More reviews on Naver", "쉬는 날이 있나요?": "Are you ever closed?", "없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.": "No. We are open every day of the year from 11:30 to 22:30, with a break from 14:30 to 15:30.", "불족발은 매운가요?": "Is the bul-jokbal spicy?", "맵지 않습니다. 참숯에 구워 불향을 입힌 족발입니다.": "No. It is jokbal grilled over charcoal for a smoky flavor.", "점심특선은 언제 먹을 수 있나요?": "When is the lunch set available?", "365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.": "Every day of the year from 11:30 to 14:30. ₩14,000 per person.", "아이와 같이 가도 되나요?": "Can I bring children?", "네. 2층에 아이들 놀이방(내사랑친구집)이 있습니다.": "Yes. There is a kids' playroom on the second floor.", "포장하면 할인이 되나요?": "Is there a discount for takeout?", "포장 주문은 2,000원 할인됩니다. 실속족발은 제외입니다.": "Takeout orders are ₩2,000 off. The value jokbal is excluded.", "주차할 수 있나요?": "Is there parking?", "리뷰 이벤트가 있나요?": "Is there a review event?", "온천장점": "Oncheonjang branch", "지금 보고 계신 매장, 2026년 2월 오픈": "this location, opened February 2026", "주소": "Address", "부산 동래구 금강로 135, 1층": "1F, 135 Geumgang-ro, Dongnae-gu, Busan", "영업": "Hours", "매일 11:30 ~ 22:30, 연중무휴": "Daily 11:30 to 22:30, open all year", "쉬는 시간": "Break", "14:30 ~ 15:30 브레이크타임": "14:30 to 15:30", "시설": "Facilities", "2층 아이들 놀이방 (내사랑친구집)": "Kids' playroom on the 2nd floor", "지하철": "Subway", "1호선 온천장역에서 걸어서 10분": "10-minute walk from Oncheonjang Station, Line 1", "주차": "Parking", "전화": "Phone", "네이버 지도에서 찾기": "Open in Naver Map", "주소 복사": "Copy address", "복사했습니다": "Copied", "주소를 선택했습니다": "Address selected", "배달의민족 주문": "Order on Baemin", "쿠팡이츠 주문": "Order on Coupang Eats", "시청 본점": "City Hall main store", "부산시청 앞, 2008년부터": "across from Busan City Hall, since 2008", "부산 연제구 신촌로 34-1": "34-1 Sinchon-ro, Yeonje-gu, Busan", "본점 네이버 지도": "Main store on Naver Map", "길찾기": "Directions", "메뉴": "Menu", "“가성비 미친 점심특선”": "“A crazy good value lunch set”", "다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.": "Filmed by guests who came to eat. Tap to watch with sound. In Korean.", "아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.": "The kids head up to the 2nd-floor playroom, and the grown-ups get to eat while it is still warm.", "2층 놀이방 오락기": "Arcade machine in the 2nd-floor playroom", "2층 아이들 놀이방 (내사랑친구집), 오락기": "Kids' playroom on the 2nd floor: slide, ball pit, arcade, Nintendo", "네. 2층에 아이들 놀이방(내사랑친구집)이 있고, 오락기도 있습니다.": "Yes. There is a kids' playroom on the second floor, with an arcade machine.", "나무로 짠 박스 안에서 먹는 밥집. 2층에는 오락기가 있는 아이들 놀이방이 있습니다.": "Dine inside warm wooden booths. Upstairs there is a kids' playroom with an arcade machine.", "1층 홀. 나무로 짠 박스 안에서 먹는 밥집입니다.": "The 1st-floor dining hall, with warm wooden booths.", "2층 놀이방, 내사랑친구집": "Kids' playroom on the 2nd floor", "식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.": "It is on a separate floor from the dining hall. The kids play upstairs while the grown-ups eat in peace downstairs.", "추억의 오락기": "Retro arcade machine", "아이용 의자와 쉬는 소파": "Kid-sized chairs and a sofa", "2008년 부산시청 앞 본점에서 시작했습니다. 앞다리만 골라 매일 직접 삶아 온 그 족발을, 온천장점에서도 맛 보세요.": "We started in 2008 across from Busan City Hall. Come taste the same jokbal in Oncheonjang, front trotters only and boiled in-house every day.", "한 접시에 여러 가지": "Several kinds on one plate", "점심특선에 나오는 계란찜": "Steamed egg, served with the lunch set", "부산시청 앞 작은 가게에서 시작한 이야기": "It began in a small shop across from Busan City Hall", "2008년, 본점 앞에서 기다리던 손님들": "2008. Guests waiting outside the main store", "늘 사람이 모이던 본점 홀": "The main store hall, always full", "앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.": "Front trotters only, boiled in-house every day, just as in 2008. Since February 2026, the same jokbal is served in Oncheonjang.", "미끄럼틀과 볼풀": "Slide and ball pit", "레트로 오락기": "Retro arcade machine", "닌텐도 게임방": "Nintendo game room", "2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도": "Kids' playroom on the 2nd floor: slide, ball pit, arcade, Nintendo", "네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.": "Yes. The 2nd-floor kids' playroom has a slide, a ball pit, a retro arcade machine and a Nintendo game room.", "전화하기": "Call us", "메뉴 이름을 누르면 영어로 보입니다": "Tap a name to see it in English", "네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.": "Write a Naver review and get a can of soft drink on the house. Please call a staff member before you write it.", "무료 주차장이 있습니다. 혼잡해서 자리가 없을 때는 근처 유료주차장을 이용해 주세요. 지하철은 1호선 온천장역에서 걸어서 10분쯤 걸립니다.": "There is a free parking lot. When it is full, please use a paid lot nearby. By subway, we are about a 10-minute walk from Oncheonjang Station on Line 1.", "무료 주차장 (혼잡 시 근처 유료주차장 이용)": "Free parking lot (paid lots nearby when full)", "단체석": "Groups", "최대 30명": "Up to 30 people", "단체로 가도 되나요?": "Can we come as a group?", "네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.": "Yes. We can seat up to 30 people together. For a large party, please call ahead.", "족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.": "Jokbal with dried pollack soup, steamed egg and rice. The whole ₩14,000 set, finished to the last bite.", "네 가지 중 세 가지 선택, 3~4인": "pick three of the four, serves 3 to 4", "점심특선 한 상 (족발 선택)": "The lunch set (with jokbal)", "주문": "Order", "포장해 간 불족발과 족발": "Bul-jokbal and jokbal, packed to go", "포장하면 2,000원 할인": "₩2,000 off when you take out", "전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 실속족발은 할인에서 제외됩니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.": "Call ahead and your order will be ready when you arrive. The value jokbal is not included in the discount. For delivery, order on Baemin or Coupang Eats.", "전화로 포장 주문": "Call to order takeout", "배달의민족": "Baemin", "쿠팡이츠": "Coupang Eats", "번호를 복사했습니다": "number copied", "결정은 언제나 이 손 위에서 내려집니다": "Every decision is made by these hands", "내사랑족발 온천장점, ㈜네오브라더스. 메뉴 사진과 건물 외관 사진은 실제 사진을 바탕으로 AI로 연출한 이미지이며 실제와 다를 수 있습니다. 맨 위 영상, 포장, 매장 안, 놀이방 사진과 리뷰 영상은 실제 촬영본입니다. 가격은 매장 사정에 따라 바뀔 수 있습니다.": "Naesarang Jokbal Oncheonjang, Neo Brothers Co., Ltd. The menu photos and the exterior photo are AI-styled images based on real photos and may differ from the real thing. The top video, takeout, dining room and playroom photos and the review videos are real footage. Prices may change.", "점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다.": "Lunch set, price per person. Available every day from 11:30 to 14:30. Choose jokbal, bossam or bul-jokbal; each comes with dried pollack soup, steamed egg and rice.", "2인 이상 주문하면 미니 막국수 서비스": "Free mini buckwheat noodles for orders of two or more"};
   var lang = 'ko';
   try { lang = localStorage.getItem('nsj-lang') || ''; } catch (e) { lang = ''; }
   if (lang !== 'ko' && lang !== 'en') lang = /^ko/i.test(navigator.language || 'ko') ? 'ko' : 'en';
