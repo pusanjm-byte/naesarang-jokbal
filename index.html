@@ -252,6 +252,8 @@ section[id="takeout"]{scroll-margin-top:112px}
 .mark{display:flex;align-items:center;gap:12px}
 .mark .wm{display:flex;flex-direction:column;line-height:1.1}
 .mark .wm small{margin-left:0;margin-top:4px}
+.mark .nm{white-space:nowrap}.mark .nm em{font-style:normal;color:var(--sun)}
+@media (max-width:360px){.mark .nm{font-size:1rem}.mark .emb{height:36px}.mark{gap:8px}}
 .mark .emb{display:block;height:54px;width:auto}
 @media (max-width:700px){.mark .emb{height:44px}.mark{gap:10px}}
 #lunch p.perk,.perk{display:inline-block;align-self:flex-start;background:var(--sun);color:var(--on-sun)!important;font-weight:900;font-size:clamp(1rem,1.6vw,1.15rem);letter-spacing:-.02em;padding:8px 16px;border-radius:999px;margin:4px 0 14px}
@@ -298,7 +300,7 @@ section[id="takeout"]{scroll-margin-top:112px}
 <body>
 <template id="tpl">
 <header class="site-head">
-<a aria-label="내사랑족발 온천장점" class="mark" href="#top"><img alt="" class="emb" height="216" src="img/logo-mark.png" width="300"/><span class="wm">내사랑족발<small>ONCHEONJANG</small></span></a>
+<a aria-label="내사랑족발 온천장점" class="mark" href="#top"><img alt="" class="emb" height="216" src="img/logo-mark.png" width="300"/><span class="wm"><span class="nm">내사랑족발 <em>온천장점</em></span><small>ONCHEONJANG</small></span></a>
 <nav aria-label="바로가기">
 <a href="#menu">Menu</a><a href="#lunch">Lunch</a><a href="#review">Review</a><a href="#space">Space</a><a href="#story">Story</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
 </nav>
@@ -572,7 +574,7 @@ section[id="takeout"]{scroll-margin-top:112px}
 </div></div>
 </template>
 <div id="app"><header class="site-head">
-<a aria-label="내사랑족발 온천장점" class="mark" href="#top"><img alt="" class="emb" height="216" src="img/logo-mark.png" width="300"/><span class="wm">내사랑족발<small>ONCHEONJANG</small></span></a>
+<a aria-label="내사랑족발 온천장점" class="mark" href="#top"><img alt="" class="emb" height="216" src="img/logo-mark.png" width="300"/><span class="wm"><span class="nm">내사랑족발 <em>온천장점</em></span><small>ONCHEONJANG</small></span></a>
 <nav aria-label="바로가기">
 <a href="#menu">Menu</a><a href="#lunch">Lunch</a><a href="#review">Review</a><a href="#space">Space</a><a href="#story">Story</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
 </nav>
