@@ -1,0 +1,578 @@
+<title>내사랑족발 온천장점</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700;125,900&family=Noto+Sans+KR:wght@400;600;700;900&display=swap">
+<style>
+/* Layout: 검은 바탕에 화면을 꽉 채우는 대문자 영문 타이틀, 그 아래 굵은 한글 문장. 구간마다 전체 폭을 쓰고, 노랑은 한 구간과 버튼에만. 좌측 정렬, 노랑 구간만 가운데. */
+:root{
+  color-scheme:dark;
+  --bg:#0b0907; --fg:#f3ecdc; --dim:rgba(243,236,220,.62); --line:rgba(243,236,220,.18);
+  --sun:#ffd21f; --on-sun:#14100b; --brown:#27160f; --alert:#ff6b61;
+  --en:"Archivo","Arial Black","Noto Sans KR",sans-serif;
+  --kr:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --gut:clamp(16px,4.6vw,64px);
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--kr);font-size:16px;line-height:1.6;margin:0;word-break:keep-all;overflow-wrap:anywhere}
+h1,h2,h3,p,dl,dd,ul{margin:0}
+ul{padding:0;list-style:none}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+
+/* 여백은 여기 한 곳에서만 */
+.site-head,.sec,.site-foot{padding-inline:var(--gut)}
+.sec{padding-block:clamp(48px,6.5vw,92px)}
+.bleed{margin-inline:calc(var(--gut) * -1)}
+
+.en{font-family:var(--en);font-stretch:125%;font-weight:900;text-transform:uppercase;letter-spacing:-.01em;line-height:.96}
+.big{font-size:clamp(1.9rem,6vw,4.6rem)}
+.mid{font-size:clamp(1.5rem,3.8vw,2.9rem)}
+.sub{font-size:clamp(1.15rem,2.1vw,1.8rem)}
+
+.site-head{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:18px}
+.mark{font-weight:900;font-size:1.2rem;letter-spacing:-.03em;text-decoration:none}
+.mark small{font-family:var(--en);font-stretch:125%;font-weight:700;font-size:.62rem;letter-spacing:.08em;color:var(--dim);margin-left:8px}
+.site-head nav{display:flex;gap:clamp(14px,2.2vw,30px)}
+.site-head nav a{font-family:var(--en);font-stretch:125%;font-weight:700;font-size:.84rem;text-decoration:none}
+.site-head nav a:hover{color:var(--sun)}
+
+.hero{padding-block:clamp(28px,4.5vw,64px) clamp(48px,6.5vw,92px);display:flex;flex-direction:column;gap:clamp(26px,4vw,52px)}
+.ttl{display:flex;flex-direction:column;gap:clamp(14px,2vw,26px)}
+.lede{font-weight:900;font-size:clamp(1.05rem,2.3vw,1.8rem);letter-spacing:-.03em;line-height:1.25;color:var(--sun)}
+.film{aspect-ratio:4/5;background:#000;overflow:hidden}
+@media (min-width:900px){
+.hero{display:grid;grid-template-columns:minmax(0,0.7fr) minmax(0,1fr);grid-template-areas:"film ttl" "film say";column-gap:clamp(36px,5vw,84px);row-gap:clamp(22px,3vw,40px);align-items:center}
+.hero .ttl{grid-area:ttl;align-self:end}
+.hero .say{grid-area:say;align-self:start}
+.hero .film{grid-area:film;margin-inline:0;aspect-ratio:9/16;width:min(100%,calc(82vh * 9 / 16));justify-self:end}
+}
+.film video{display:block;width:100%;height:100%;object-fit:cover}
+.film{position:relative}
+.film .cap{position:absolute;inset:0 0 auto 0;margin:0;padding:clamp(16px,4vw,28px) clamp(18px,5vw,30px) clamp(48px,12vw,90px);background:linear-gradient(to bottom,rgba(0,0,0,.82),rgba(0,0,0,0));color:#f4efe6;font-weight:900;font-size:clamp(1.1rem,4.6vw,1.7rem);line-height:1.28;letter-spacing:-.03em;text-shadow:0 2px 14px rgba(0,0,0,.6);pointer-events:none;text-wrap:balance;word-break:keep-all}
+html.editing .film .cap{pointer-events:auto}
+.say{display:flex;flex-direction:column;gap:22px;align-items:flex-start}
+.say p.kr{font-weight:700;font-size:clamp(1.05rem,2vw,1.6rem);line-height:1.4;letter-spacing:-.02em;max-width:24em}
+.say p.note{font-family:var(--en);font-stretch:125%;font-weight:700;font-size:.9rem;color:var(--dim);max-width:60ch;line-height:1.5}
+.pill{display:inline-block;background:var(--sun);color:var(--on-sun);font-weight:700;font-size:clamp(.92rem,1.2vw,1.08rem);padding:.75em 1.8em;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font-family:var(--kr)}
+
+.sun{background:var(--sun);color:var(--on-sun);text-align:center;padding-top:0;overflow:hidden}
+.mq{display:flex;width:max-content;animation:mq 46s linear infinite;padding-block:14px}
+.mq img{width:auto;height:clamp(96px,11.5vw,150px);aspect-ratio:3/2;margin-right:14px;flex:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sun h2{padding-top:clamp(40px,5.5vw,76px)}
+.sun p{font-weight:600;font-size:clamp(.98rem,1.5vw,1.25rem);max-width:30em;margin:clamp(24px,3.4vw,48px) auto 0;line-height:1.5}
+
+.rows{border-bottom:1px solid var(--line)}
+.row{display:grid;grid-template-columns:1fr auto;align-items:end;gap:12px 32px;padding-block:clamp(18px,2.4vw,30px);border-top:1px solid var(--line)}
+.name{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 18px;line-height:1.1}
+.name .k{font-family:var(--kr);font-weight:900;letter-spacing:-.05em;font-size:clamp(1.8rem,4.6vw,3.6rem)}
+.name .e{font-size:clamp(.8rem,1.3vw,1.05rem);font-weight:700;color:var(--dim);letter-spacing:.04em}
+html:not(.editing):not([lang="en"]) .name{display:grid;justify-items:start;align-items:end}
+html:not(.editing):not([lang="en"]) .name .k,html:not(.editing):not([lang="en"]) .name .e{grid-area:1/1;transition:opacity .3s,transform .35s cubic-bezier(.2,.8,.2,1)}
+html:not(.editing):not([lang="en"]) .name .e{font-size:clamp(1.8rem,4.6vw,3.6rem);letter-spacing:-.01em;line-height:1.1;color:var(--sun);opacity:0;transform:translateY(.35em)}
+html:not(.editing):not([lang="en"]) .row{cursor:pointer}
+html:not(.editing):not([lang="en"]) .row.flip .name .k{opacity:0;transform:translateY(-.35em)}
+html:not(.editing):not([lang="en"]) .row.flip .name .e{opacity:1;transform:none}
+@media (hover:hover){
+  html:not(.editing):not([lang="en"]) .row:hover .name .k{opacity:0;transform:translateY(-.35em)}
+  html:not(.editing):not([lang="en"]) .row:hover .name .e{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){.name .k,.name .e{transition:none!important}}
+.taphint{display:none;font-size:.82rem}
+@media (hover:none){html:not([lang="en"]):not(.editing) .head p.taphint{display:block;margin-top:4px}}
+.editing .head p.taphint{display:block}
+.row small{display:block;color:var(--dim);font-size:.9rem;grid-column:1/-1}
+.pr{display:flex;gap:clamp(14px,2vw,28px);font-variant-numeric:tabular-nums;padding-bottom:.6em}
+.pr div{display:flex;flex-direction:column}
+.pr dt{color:var(--dim);font-size:.82rem}
+.pr dd{font-family:var(--en);font-stretch:125%;font-weight:700;font-size:clamp(1rem,1.5vw,1.3rem)}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:clamp(20px,3vw,40px)}
+.head p{color:var(--dim);margin-top:10px}
+.ctl{display:flex;gap:6px}
+.ctl button{width:52px;height:52px;border:1px solid var(--line);background:transparent;color:var(--fg);font:400 1.5rem var(--en);cursor:pointer}
+.ctl button:hover{background:var(--fg);color:var(--bg)}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gut);scroll-padding-inline:var(--gut);scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.strip figure{margin:0;flex:none;scroll-snap-align:start;width:min(66vw,440px)}
+.strip.tall figure{width:min(54vw,300px)}
+.strip img{height:auto;aspect-ratio:3/2}
+.strip.tall img{aspect-ratio:4/5}
+.kids{margin-top:clamp(44px,6vw,80px);margin-bottom:clamp(20px,3vw,40px)}
+.ktx{display:flex;flex-direction:column;gap:14px;align-items:flex-start}
+.ktx p{color:var(--dim);max-width:34em}
+.ktx p.quote{color:var(--sun);font-weight:900;font-size:clamp(1.2rem,2.3vw,1.9rem);letter-spacing:-.03em;line-height:1.25}
+.kstrip img{aspect-ratio:4/3}
+.strip figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:12px;font-weight:600}
+.strip figcaption span{color:var(--dim);font-weight:400;font-variant-numeric:tabular-nums}
+
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,64px);margin-top:clamp(44px,6vw,80px)}
+.cols>div{min-width:0;display:flex;flex-direction:column;gap:16px}
+.cols p{color:var(--dim)}
+.list{display:grid;grid-template-columns:1fr auto;font-variant-numeric:tabular-nums}
+.list dt,.list dd{padding-block:10px;border-top:1px solid var(--line)}
+.list dd{text-align:right;font-family:var(--en);font-stretch:125%;font-weight:700}
+.list dt small{color:var(--dim)}
+.sidepic{margin:0;max-width:300px}
+.sidepics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:560px}
+.sidepics .sidepic figcaption{font-size:.82rem}
+.sidepic img{height:auto;aspect-ratio:3/2}
+.sidepic figcaption{padding-top:10px;font-weight:600;font-size:.9rem;color:var(--dim)}
+.num{font-size:clamp(2.3rem,4.6vw,3.4rem);color:var(--sun)}
+
+.clips{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-inline:var(--gut);scroll-padding-inline:var(--gut);scrollbar-width:none}
+.clips::-webkit-scrollbar{display:none}
+.clips figure{margin:0;flex:none;scroll-snap-align:start;width:min(56vw,250px)}
+.clip{aspect-ratio:9/16;background:#000;border-radius:20px;overflow:hidden}
+.clip video{display:block;width:100%;height:100%;object-fit:cover}
+.clips figcaption{display:flex;flex-direction:column;gap:4px;padding-top:14px}
+.clips figcaption b{color:var(--sun);font-weight:900;font-size:1rem;letter-spacing:-.02em;line-height:1.3}
+.clips figcaption span{color:var(--dim);font-size:.9rem}
+.clips figcaption small{font-size:.72rem;font-weight:700;letter-spacing:.08em;color:var(--dim)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:880px}
+.story figure{margin:0}
+.story img{height:auto;aspect-ratio:3/2}
+.story figcaption{padding-top:12px;font-weight:600}
+.storytx{font-weight:700;font-size:clamp(1rem,1.7vw,1.4rem);line-height:1.45;letter-spacing:-.02em;max-width:26em;margin-top:clamp(28px,4vw,56px)}
+@media (max-width:820px){.story{grid-template-columns:1fr}}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;padding-block:clamp(15px,1.8vw,24px);font-weight:700;font-size:clamp(.98rem,1.3vw,1.15rem)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--en);font-weight:700;font-size:1.5em;line-height:1;transition:transform .3s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{color:var(--dim);max-width:60ch;padding-bottom:clamp(20px,2.6vw,34px)}
+
+.site-foot{background:var(--brown);padding-block:clamp(56px,8vw,112px) 130px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,80px);align-items:start}
+.site-foot .logo{height:auto;aspect-ratio:1498/1118;max-width:220px}
+.fside{display:flex;flex-direction:column;gap:28px;align-items:flex-start;min-width:0}
+.fside .ext{height:auto;aspect-ratio:5/4;max-width:460px}
+.route{margin:0;width:100%;max-width:640px}.route video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:#000}.route figcaption{margin-top:10px;color:var(--dim);font-size:.85rem}
+.info{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;margin-block:24px}
+.info dt{color:var(--dim)}
+.info dd{min-width:0}
+.todo{color:var(--alert);font-weight:600}
+.shop{font-weight:900;font-size:1.25rem;letter-spacing:-.02em;margin-top:22px}
+.shop small{font-weight:400;font-size:.86rem;color:var(--dim);margin-left:8px;letter-spacing:0}
+.shop + .info{margin-top:14px}
+.branch{border:2px solid var(--sun);border-radius:20px;margin-top:30px;margin-bottom:34px;padding:2px 22px 22px}
+.act{display:flex;flex-wrap:wrap;gap:10px}
+.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--fg)}
+.fine{grid-column:1/-1;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);padding-top:18px}
+.biz{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px 18px;margin:0;border-top:1px solid var(--line);padding-top:18px;color:var(--dim);font-size:.78rem}.biz div{display:flex;gap:6px}.biz dt{opacity:.7}.biz dd{margin:0}
+
+.dock{position:fixed;left:0;right:0;bottom:0;display:none;justify-content:center;padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));pointer-events:none}
+.dock>div{pointer-events:auto;display:flex;gap:4px;background:var(--brown);border:1px solid var(--line);padding:5px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.55)}
+.dk{color:var(--fg);text-decoration:none;font-weight:700;padding:11px 20px;border-radius:999px;white-space:nowrap}
+.dk.go{background:var(--sun);color:var(--on-sun)}
+
+.js .fu{opacity:.22;transform:translateY(30px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}
+.js .fu.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.mq{animation:none}}
+
+@media (max-width:820px){
+  .site-head{flex-wrap:wrap;padding-block:12px 10px;gap:10px 16px}
+  .site-head nav{order:3;flex:0 0 100%;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin-inline:calc(var(--gut) * -1);padding-inline:var(--gut)}
+  .site-head nav::-webkit-scrollbar{display:none}
+  .site-head nav a{flex:none;border:1px solid var(--line);border-radius:999px;padding:7px 14px;font-size:.78rem}
+  section[id],footer[id],#lunch,#kids{scroll-margin-top:112px}
+  .sec{padding-block:44px}
+  .dock{padding-inline:12px}
+  .dock>div{width:100%;max-width:520px;display:grid;grid-template-columns:repeat(4,1fr)}
+  .dk{text-align:center;padding:14px 8px;font-size:1rem}
+  .site-foot .logo{max-width:150px;align-self:center}
+  .site-foot>div{order:1}
+  .site-foot>.fside{order:2;align-items:stretch}
+  .fside .ext{max-width:none}
+  .site-foot .fine{order:3}.site-foot .biz{order:4}
+  .act .pill{flex:1 1 100%;text-align:center;padding:.9em 1em}
+  .say .pill{align-self:stretch;text-align:center}
+  .info{gap:10px 16px}
+  .cols{margin-top:56px;gap:48px}
+  .branch{padding:2px 16px 18px}
+  .row{grid-template-columns:1fr}
+  .pr{padding-bottom:0}
+  .cols{grid-template-columns:1fr}
+  .ctl{display:none}
+  .site-foot{grid-template-columns:1fr}
+  .dock{display:flex}
+}
+
+.list dt.stack small{display:block;margin:2px 0 0}
+.rv .head{margin-bottom:0}
+.rv{display:flex;flex-direction:column;gap:clamp(20px,3vw,40px)}
+.rvtx{display:contents}
+.rv .act{order:3}
+.rv .clips{margin-inline:calc(var(--gut) * -1)}
+.tk{display:grid;grid-template-columns:minmax(0,560px) minmax(0,1fr);gap:clamp(24px,5vw,72px);align-items:center}
+.tk figure{margin:0}
+.tk img{height:auto;aspect-ratio:3/2;border-radius:4px}
+.tk figcaption{padding-top:10px;font-weight:600;font-size:.9rem;color:var(--dim)}
+.tktx{display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.tktx p{color:var(--dim);max-width:34em}
+.tktx p.quote{color:var(--sun);font-weight:900;font-size:clamp(1.3rem,2.6vw,2.1rem);letter-spacing:-.03em;line-height:1.25}
+section[id="takeout"]{scroll-margin-top:112px}
+@media (max-width:820px){
+  .tk{grid-template-columns:1fr}
+  .tk figure{max-width:none;order:2}
+  .sidepics{max-width:none;gap:8px}
+  .sidepics .sidepic img{aspect-ratio:1/1}
+  .sidepics .sidepic figcaption{font-size:.85rem;padding-top:8px}
+  .dk{padding:14px 4px;font-size:.95rem}
+}
+@media (min-width:900px){
+  .rv{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:clamp(40px,6vw,96px)}
+  .rvtx{display:flex;flex-direction:column;gap:28px}
+  .rv .act{order:0}
+  .rv .clips{margin-inline:0;padding-inline:0;overflow:visible}
+  .rv .clips figure{width:clamp(230px,22vw,300px)}
+  .strip.tall,.strip.kstrip{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible}
+  .strip.tall figure,.strip.kstrip figure{width:auto}
+  .strip.tall img{aspect-ratio:4/3}
+  .story{max-width:none}
+}
+.mark{display:flex;align-items:center;gap:12px}
+.mark .wm{display:flex;flex-direction:column;line-height:1.1}
+.mark .wm small{margin-left:0;margin-top:4px}
+.mark .nm{white-space:nowrap}.mark .nm em{font-style:normal;color:var(--sun)}
+@media (max-width:360px){.mark .nm{font-size:1rem}.mark .emb{height:36px}.mark{gap:8px}}
+.mark .emb{display:block;height:54px;width:auto}
+@media (max-width:700px){.mark .emb{height:44px}.mark{gap:10px}}
+#lunch p.perk,.perk{display:inline-block;align-self:flex-start;background:var(--sun);color:var(--on-sun)!important;font-weight:900;font-size:clamp(1rem,1.6vw,1.15rem);letter-spacing:-.02em;padding:8px 16px;border-radius:999px;margin:4px 0 14px}
+.tklist{width:100%;max-width:26em}
+.film .snd{position:absolute;right:12px;bottom:12px;z-index:2;display:flex;align-items:center;gap:8px;font:700 .88rem var(--kr);color:var(--on-sun);background:var(--sun);border:0;border-radius:999px;padding:10px 16px 10px 12px;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.45)}
+.film .snd svg{width:20px;height:20px}
+.film .snd .w{display:none}
+.film .snd[aria-pressed="true"]{background:rgba(11,9,7,.78);color:var(--fg)}
+.film .snd[aria-pressed="true"] .w{display:inline}
+.film .snd[aria-pressed="true"] .x{display:none}
+.editing .film .snd{display:none}
+@media (min-width:900px){.strip.kstrip.two{grid-template-columns:repeat(2,1fr)}}
+</style>
+
+<header class="site-head">
+  <a class="mark" href="#top" aria-label="내사랑족발 온천장점"><img class="emb" src="img/logo-mark.png" alt="" width="300" height="216"><span class="wm"><span class="nm">내사랑족발 <em>온천장점</em></span><small>ONCHEONJANG</small></span></a>
+  <nav aria-label="바로가기">
+    <a href="#menu">Menu</a><a href="#lunch">Lunch</a><a href="#review">Review</a><a href="#space">Space</a><a href="#story">Story</a><a href="#faq">FAQ</a><a href="#visit">Visit</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="sec hero">
+    <div class="ttl"><p class="en big fu">Boiled fresh<br>every day</p>
+    <h1 class="lede fu">매일 직접 삶는 족발·보쌈 전문점, 내사랑족발 온천장점</h1></div>
+    <div class="film bleed">
+      <video id="film" autoplay muted loop playsinline preload="metadata" poster="video/real-poster.jpg" aria-label="갓 삶아 김이 나는 족발과 칼로 얇게 써는 모습을 매장에서 찍은 영상">
+        <source src="video/real.mp4" type="video/mp4">
+      </video>
+      <button class="snd" type="button" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path class="w" d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path class="x" d="M16 9l5 6M21 9l-5 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span>음악 켜기</span></button>
+      <audio id="bgm" src="video/cm.mp3" loop preload="none"></audio>
+    </div>
+    <div class="say">
+      <p class="kr fu">2008년 부산시청 앞 본점에서 시작했습니다. 앞다리만 골라 매일 직접 삶아 온 그 족발을, 온천장점에서도 맛 보세요.</p>
+      <p class="note fu">Since 2008. Front trotters only, boiled in-house every day. Now also serving in Oncheonjang, Busan.</p>
+      <a class="pill fu" href="#visit">오시는 길</a>
+    </div>
+  </section>
+
+  <section class="sec sun">
+    <div class="bleed" aria-hidden="true">
+      <div class="mq">
+        <img src="img/n-jokbal.jpg" alt=""><img src="img/n-bossam.jpg" alt=""><img src="img/n-naengchae.jpg" alt=""><img src="img/n-buljok.jpg" alt=""><img src="img/n-half.jpg" alt=""><img src="img/n-lunch4.jpg" alt=""><img src="img/n-noodle3.jpg" alt=""><img src="img/n-hwangtae.jpg" alt=""><img src="img/n-rice.jpg" alt="">
+        <img src="img/n-jokbal.jpg" alt=""><img src="img/n-bossam.jpg" alt=""><img src="img/n-naengchae.jpg" alt=""><img src="img/n-buljok.jpg" alt=""><img src="img/n-half.jpg" alt=""><img src="img/n-lunch4.jpg" alt=""><img src="img/n-noodle3.jpg" alt=""><img src="img/n-hwangtae.jpg" alt=""><img src="img/n-rice.jpg" alt="">
+      </div>
+    </div>
+    <h2 class="en big fu">Front legs only<br>Boiled daily<br>All house-made</h2>
+    <p class="fu">족발은 앞다리만 씁니다. 매일 매장에서 직접 삶고, 반찬과 소스까지 전부 직접 만듭니다.</p>
+  </section>
+
+  <section class="sec" id="menu">
+    <div class="head">
+      <div><h2 class="en mid fu">Menu</h2><p>중 2~3인, 대 3~4인, 특대 4~5인 기준</p><p class="taphint">메뉴 이름을 누르면 영어로 보입니다</p></div>
+    </div>
+    <div class="rows">
+      <article class="row fu">
+        <h3 class="name"><span class="k">족발</span><span class="e en">Jokbal</span></h3>
+        <dl class="pr"><div><dt>중</dt><dd>38,000</dd></div><div><dt>대</dt><dd>47,000</dd></div><div><dt>특대</dt><dd>55,000</dd></div></dl>
+        <small>가장 기본이고 가장 많이 찾는 메뉴. 족발 국내산</small>
+      </article>
+      <article class="row fu">
+        <h3 class="name"><span class="k">보쌈</span><span class="e en">Bossam</span></h3>
+        <dl class="pr"><div><dt>중</dt><dd>38,000</dd></div><div><dt>대</dt><dd>47,000</dd></div><div><dt>특대</dt><dd>55,000</dd></div></dl>
+        <small>부드러운 수육과 신선한 쌈채소. 삼겹살 칠레산</small>
+      </article>
+      <article class="row fu">
+        <h3 class="name"><span class="k">냉채족발</span><span class="e en">Naengchae</span></h3>
+        <dl class="pr"><div><dt>중</dt><dd>40,000</dd></div><div><dt>대</dt><dd>49,000</dd></div><div><dt>특대</dt><dd>57,000</dd></div></dl>
+        <small>새콤달콤한 특제 소스와 신선한 야채. 족발 국내산</small>
+      </article>
+      <article class="row fu">
+        <h3 class="name"><span class="k">불족발</span><span class="e en">Bul-jokbal</span></h3>
+        <dl class="pr"><div><dt>중</dt><dd>40,000</dd></div><div><dt>대</dt><dd>49,000</dd></div><div><dt>특대</dt><dd>57,000</dd></div></dl>
+        <small>참숯에 구워 불향을 입혔습니다. 적당히 매콤합니다. 족발 국내산</small>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" style="padding-top:0">
+    <div class="head">
+      <div><h2 class="en mid fu">On the table</h2><p>옆으로 넘겨 보세요</p></div>
+      <div class="ctl"><button type="button" data-go="-1" data-for="food" aria-label="이전 사진">&#8249;</button><button type="button" data-go="1" data-for="food" aria-label="다음 사진">&#8250;</button></div>
+    </div>
+    <div class="strip bleed" id="food">
+      <figure><img loading="lazy" decoding="async" src="img/n-jokbal.jpg" alt="족발"><figcaption>족발<span>38,000원부터</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/n-bossam.jpg" alt="보쌈과 보쌈김치"><figcaption>보쌈<span>38,000원부터</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/n-naengchae.jpg" alt="냉채족발"><figcaption>냉채족발<span>40,000원부터</span></figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/n-buljok.jpg" alt="불족발"><figcaption>불족발<span>40,000원부터</span></figcaption></figure>
+    </div>
+
+    <div class="cols">
+      <div class="fu">
+        <h3 class="en sub">Half &amp; half</h3>
+        <p>두 가지를 골라 한 접시에. 둘이서 가장 많이 찾습니다.</p>
+        <figure class="sidepic"><img loading="lazy" decoding="async" src="img/n-half.jpg" alt="보쌈과 불족발 반반 한 접시"><figcaption>보쌈 + 불족발</figcaption></figure>
+        <dl class="list">
+          <dt>족발 + 보쌈</dt><dd>44,000</dd>
+          <dt>족발 + 불족발</dt><dd>45,000</dd>
+          <dt>족발 + 냉채족발</dt><dd>45,000</dd>
+          <dt>보쌈 + 불족발</dt><dd>45,000</dd>
+          <dt>보쌈 + 냉채족발</dt><dd>45,000</dd>
+          <dt>불족발 + 냉채족발</dt><dd>46,000</dd>
+          <dt class="stack">시그니처 반반반 <small>네 가지 중 세 가지 선택, 3~4인</small></dt><dd>64,000~65,000</dd>
+        </dl>
+      </div>
+      <div class="fu" id="lunch">
+        <h3 class="en sub">Lunch</h3>
+        <div class="en num">14,000</div>
+        <p class="perk">2인 이상 주문하면 미니 막국수 서비스</p>
+        <figure class="sidepic"><img loading="lazy" decoding="async" src="img/n-lunch4.jpg" alt="족발과 불족발 접시, 계란찜, 황태해장국, 미니 막국수, 공기밥, 쌈채소가 차려진 점심특선 한 상"><figcaption>점심특선 한 상 차림</figcaption></figure>
+        <p>점심특선 1인 가격입니다. 매일 11:30부터 14:30까지 주문할 수 있습니다. 족발, 보쌈, 불족발 중 하나를 고르면 메뉴마다 황태해장국, 계란찜, 공기밥이 함께 나옵니다.</p>
+      </div>
+      <div class="fu">
+        <h3 class="en sub">Sides</h3>
+        <p>같이 시키면 좋은 것들.</p>
+        <div class="sidepics"><figure class="sidepic"><img loading="lazy" decoding="async" src="img/n-hwangtae.jpg" alt="뚝배기 황태해장국"><figcaption>황태해장국</figcaption></figure><figure class="sidepic"><img loading="lazy" decoding="async" src="img/n-noodle3.jpg" alt="빨간 양념 메밀면 위에 양배추채, 깻잎채, 삶은 달걀을 올린 쟁반막국수"><figcaption>쟁반막국수</figcaption></figure><figure class="sidepic"><img loading="lazy" decoding="async" src="img/n-rice.jpg" alt="김가루와 마요네즈를 올린 셀프주먹밥"><figcaption>셀프주먹밥</figcaption></figure></div>
+        <dl class="list">
+          <dt>황태해장국</dt><dd>6,000</dd>
+          <dt>쟁반막국수</dt><dd>6,000</dd>
+          <dt>미니족</dt><dd>13,000</dd>
+          <dt>셀프주먹밥</dt><dd>3,000</dd>
+          <dt>보쌈김치</dt><dd>4,000</dd>
+          <dt>고기 추가 <small>족발, 보쌈</small></dt><dd>18,000</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="takeout" style="padding-top:0">
+  <div class="tk">
+    <figure class="fu"><img loading="lazy" decoding="async" src="img/n-takeout2.jpg" alt="포장 용기에 담긴 불족발, 족발, 보쌈과 쌈채소, 곁들임 반찬"><figcaption>포장 한 상, 불족발·족발·보쌈</figcaption></figure>
+    <div class="tktx">
+      <h2 class="en mid fu">Takeout</h2>
+      <p class="quote fu">포장하면 2,000원 할인</p>
+      <dl class="list tklist fu"><dt class="stack">실속족발 <small>1인용, 포장 전용 (포장 할인 제외)</small></dt><dd>23,000</dd></dl>
+      <p class="fu">전화로 미리 주문하고 찾아가시면 기다리지 않습니다. 배달은 배달의민족과 쿠팡이츠에서 주문할 수 있습니다.</p>
+      <div class="act">
+        <a class="pill" href="tel:0517113848">전화로 포장 주문</a>
+        <a class="pill ghost" data-href="baemin" data-default="https://s.baemin.com/Y4000AIeibj3y" href="https://s.baemin.com/Y4000AIeibj3y" target="_blank" rel="noopener">배달의민족</a>
+        <a class="pill ghost" data-href="coupang" data-default="https://web.coupangeats.com/share?storeId=991533&amp;dishId&amp;key=7492274f-632a-4cb5-ad2c-f72bcdb93ed0" href="https://web.coupangeats.com/share?storeId=991533&amp;dishId&amp;key=7492274f-632a-4cb5-ad2c-f72bcdb93ed0" target="_blank" rel="noopener">쿠팡이츠</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="sec" id="review" style="padding-top:0">
+  <div class="rv">
+    <div class="rvtx">
+      <div class="head"><div><h2 class="en mid fu">Best review</h2><p>다녀간 손님이 직접 찍은 영상입니다. 눌러서 소리와 함께 보세요.</p></div></div>
+      <div class="act"><a class="pill" href="#lunch">점심특선 보기</a></div>
+    </div>
+  <div class="clips">
+    <figure>
+      <div class="clip"><video controls playsinline preload="none" poster="video/review-poster.jpg" aria-label="아이와 함께 온 손님의 온천장점 방문 리뷰 영상">
+        <source src="video/review.mp4" type="video/mp4">
+      </video></div>
+      <figcaption><small class="en">With kids</small><b>“족발집에서 아이들이 사라진다”</b><span>아이는 2층 놀이방으로 올라가고, 어른은 식기 전에 편하게 먹습니다.</span></figcaption>
+    </figure>
+    <figure>
+      <div class="clip"><video controls playsinline preload="none" poster="video/review2-poster.jpg" aria-label="점심특선을 먹어 본 손님의 온천장점 방문 리뷰 영상">
+        <source src="video/review2.mp4" type="video/mp4">
+      </video></div>
+      <figcaption><small class="en">Lunch set</small><b>“가성비 미친 점심특선”</b><span>족발에 황태해장국, 계란찜, 공기밥까지. 14,000원 한 상을 끝까지 비웁니다.</span></figcaption>
+    </figure>
+    <figure>
+      <div class="clip"><video controls playsinline preload="none" poster="video/review3-poster.jpg" aria-label="족발과 냉채족발을 먹고 매장을 둘러본 손님의 온천장점 방문 리뷰 영상">
+        <source src="video/review3.mp4" type="video/mp4">
+      </video></div>
+      <figcaption><small class="en">Full visit</small><b>“넓찍하고 깔끔하고, 쫀득쫀득”</b><span>족발과 냉채족발, 계란찜, 막국수까지. 홀과 2층 놀이방도 함께 둘러봅니다.</span></figcaption>
+    </figure>
+  </div>
+  </div>
+</section>
+
+<section class="sec" id="space" style="padding-top:0">
+    <div class="head">
+      <div><h2 class="en mid fu">The house</h2><p>나무 상자처럼 아늑한 홀, 철판 테이블 노포 자리, 2층 놀이방까지. 그날 기분대로 골라 앉으세요.</p></div>
+    </div>
+    <div class="strip tall bleed">
+      <figure><img loading="lazy" decoding="async" src="img/hall2.jpg" alt="홀 전경"><figcaption>홀</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/hall1.jpg" alt="창가 쪽 좌석"><figcaption>창가 자리</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/hall3.jpg" alt="안쪽 좌석"><figcaption>안쪽 자리</figcaption></figure>
+    </div>
+    <div class="kids" id="back">
+    <div class="ktx">
+      <h3 class="en sub fu">Back room</h3>
+      <p class="quote fu">뒷자리는 노포 감성</p>
+      <p class="fu">홀 뒤쪽은 둥근 철판 테이블과 벽돌 바닥으로 꾸민 노포 자리입니다. 테이블마다 태블릿으로 바로 주문할 수 있습니다.</p>
+    </div>
+    </div>
+    <div class="strip bleed kstrip two">
+      <figure><img loading="lazy" decoding="async" src="img/back1.jpg" alt="둥근 철판 테이블과 검은 의자가 놓인 벽돌 바닥의 노포 자리"><figcaption>철판 테이블 자리</figcaption></figure>
+      <figure><img loading="lazy" decoding="async" src="img/back2.jpg" alt="출입문 쪽으로 이어지는 노포 자리 통로"><figcaption>입구 쪽 노포 자리</figcaption></figure>
+    </div>
+    <div class="kids" id="kids">
+    <div class="ktx">
+      <h3 class="en sub fu">Kids room</h3>
+      <p class="quote fu">2층 놀이방, 내사랑친구집</p>
+      <p class="fu">식사하는 1층 홀과 층이 나뉘어 있습니다. 아이들은 2층에서 놀고, 어른들은 1층에서 편하게 드세요.</p>
+    </div>
+  </div>
+  <div class="strip bleed kstrip">
+    <figure><img loading="lazy" decoding="async" src="img/kids1.jpg" alt="미끄럼틀과 볼풀이 있는 2층 놀이시설"><figcaption>미끄럼틀과 볼풀</figcaption></figure>
+    <figure><img loading="lazy" decoding="async" src="img/kids2.jpg" alt="레트로 오락기와 아이용 의자 두 개"><figcaption>레트로 오락기</figcaption></figure>
+    <figure><img loading="lazy" decoding="async" src="img/kids3.jpg" alt="벽걸이 TV와 닌텐도 게임기가 있는 방"><figcaption>닌텐도 게임방</figcaption></figure>
+  </div>
+</section>
+
+  <section class="sec" id="story" style="padding-top:0">
+  <div class="head">
+    <div><h2 class="en mid fu">Since 2008</h2><p>부산시청 앞 작은 가게에서 시작한 이야기</p></div>
+  </div>
+  <div class="story">
+    <figure class="fu"><img loading="lazy" decoding="async" src="img/story1.jpg" alt="2008년 부산시청 앞 내사랑족발 본점 앞에서 줄을 서서 기다리는 손님들, 흑백 사진"><figcaption>2008년, 본점 앞에서 기다리던 손님들</figcaption></figure>
+    <figure class="fu"><img loading="lazy" decoding="async" src="img/story2.jpg" alt="손님으로 가득 찬 내사랑족발 본점 홀, 흑백 사진"><figcaption>늘 사람이 모이던 본점 홀</figcaption></figure>
+  </div>
+  <p class="storytx fu">앞다리만 골라 매일 직접 삶는 방식은 2008년 그대로입니다. 그 족발을 2026년 2월부터 온천장점에서도 냅니다.</p>
+</section>
+
+<section class="sec faq" id="faq" style="padding-top:0">
+    <div class="head"><h2 class="en mid fu">FAQ</h2></div>
+    <details open>
+      <summary>쉬는 날이 있나요?</summary>
+      <p>없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.</p>
+    </details>
+    <details>
+      <summary>불족발은 매운가요?</summary>
+      <p>많이 맵지 않아요. 참숯에 구워 불향을 입힌 족발에 기분 좋게 매콤한, 딱 적당한 맵기입니다.</p>
+    </details>
+    <details>
+      <summary>점심특선은 언제 먹을 수 있나요?</summary>
+      <p>365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.</p>
+    </details>
+    <details>
+      <summary>아이와 같이 가도 되나요?</summary>
+      <p>네. 2층 놀이방(내사랑친구집)에 미끄럼틀과 볼풀, 레트로 오락기, 닌텐도 게임방이 있습니다.</p>
+    </details>
+    <details>
+      <summary>포장하면 할인이 되나요?</summary>
+      <p>포장 주문은 2,000원 할인됩니다. 포장 전용 메뉴인 실속족발(1인용, 23,000원)은 할인에서 제외됩니다.</p>
+    </details>
+    <details>
+      <summary>단체로 가도 되나요?</summary>
+      <p>네. 최대 30명까지 함께 앉을 수 있습니다. 인원이 많으면 미리 전화로 알려 주세요.</p>
+    </details>
+    <details>
+      <summary>주차할 수 있나요?</summary>
+      <p>매장 가까이에 무료 공영주차장이 있어 편하게 이용하실 수 있어요. 다만 매장 자체 주차 지원은 해드리지 못하는 점, 너그러운 양해 부탁드립니다. 지하철 1호선 온천장역에서는 걸어서 10분쯤 걸립니다.</p>
+    </details>
+    <details>
+      <summary>리뷰 이벤트가 있나요?</summary>
+      <p>네이버 리뷰를 쓰시면 음료수 뚱캔 하나를 서비스로 드립니다. 작성 전에 직원을 먼저 불러 주세요.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="site-foot" id="visit">
+  <div class="fside">
+    <figure class="route"><video class="auto" muted loop playsinline preload="none" poster="video/route3-poster.jpg" aria-label="온천장역에서 허심청을 지나 내사랑족발 온천장점까지 가는 길을 3D 지도로 보여주는 영상"><source src="video/route3.mp4" type="video/mp4"></video><figcaption>온천장역에서 매장까지, 한눈에 보는 길</figcaption></figure>
+    <img loading="lazy" decoding="async" class="ext" src="img/exterior5.jpg" alt="해 질 무렵 불이 켜진 하트 모양 간판과 노란 외벽의 내사랑족발 온천장점 정면">
+  </div>
+  <div>
+    <h2 class="en mid">Visit</h2>
+    <div class="branch">
+      <h3 class="shop">온천장점 <small>지금 보고 계신 매장, 2026년 2월 오픈</small></h3>
+      <dl class="info">
+        <dt>주소</dt><dd id="addr">부산 동래구 금강로 135, 1층</dd>
+        <dt>영업</dt><dd>매일 11:30 ~ 22:30, 연중무휴</dd>
+        <dt>쉬는 시간</dt><dd>14:30 ~ 15:30 브레이크타임</dd>
+        <dt>시설</dt><dd>2층 놀이방 (내사랑친구집): 미끄럼틀, 볼풀, 오락기, 닌텐도</dd>
+        <dt>지하철</dt><dd>1호선 온천장역에서 걸어서 10분</dd>
+        <dt>주차</dt><dd>인근 무료 공영주차장 이용 (매장 주차 지원 불가)</dd>
+        <dt>단체석</dt><dd>최대 30명</dd>
+        <dt>전화</dt><dd>051-711-3848</dd>
+      </dl>
+      <div class="act">
+        <a class="pill" href="https://naver.me/GOhvwcdF" target="_blank" rel="noopener">네이버 지도에서 찾기</a>
+        <a class="pill ghost" href="tel:0517113848">전화하기</a>
+        <button class="pill ghost" id="copy" type="button">주소 복사</button>
+      </div>
+    </div>
+    <h3 class="shop">시청 본점 <small>부산시청 앞, 2008년부터</small></h3>
+    <dl class="info">
+      <dt>주소</dt><dd>부산 연제구 신촌로 34-1</dd>
+      <dt>전화</dt><dd>051-866-3848</dd>
+    </dl>
+    <div class="act">
+      <a class="pill ghost" href="https://naver.me/G4W5BwJR" target="_blank" rel="noopener">본점 네이버 지도</a>
+    </div>
+  </div>
+  <dl class="biz">
+    <div><dt>상호</dt><dd>주식회사 네오브라더스</dd></div>
+    <div><dt>대표</dt><dd>박동명</dd></div>
+    <div><dt>사업자등록번호</dt><dd>731-81-03852</dd></div>
+    <div><dt>주소</dt><dd>부산광역시 동래구 금강로 135, 1층·2층(온천동)</dd></div>
+    <div><dt>전화</dt><dd>051-711-3848</dd></div>
+  </dl>
+</footer>
+
+<div class="dock"><div>
+  <a class="dk" href="tel:0517113848">전화</a>
+  <a class="dk" data-href="naver" data-default="https://naver.me/GOhvwcdF" target="_blank" rel="noopener">길찾기</a>
+  <a class="dk" href="#takeout">주문</a>
+  <a class="dk go" href="#menu">메뉴</a>
+</div></div>
+
+<script>
+(function(){
+  var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if ('IntersectionObserver' in window && !rm) {
+    document.documentElement.classList.add('js');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.fu').forEach(function(el){ io.observe(el); });
+  }
+  var vids = document.querySelectorAll('.film video, video.auto');
+  if (rm) {
+    vids.forEach(function(v){ v.removeAttribute('autoplay'); v.pause(); v.controls = true; });
+  } else if ('IntersectionObserver' in window) {
+    var vo = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting) { var p = e.target.play(); if (p && p.catch) p.catch(function(){}); }
+        else e.target.pause();
+      });
+    }, {threshold: 0.25});
+    vids.forEach(function(v){ vo.observe(v); });
+  }
+  document.querySelectorAll('.ctl button').forEach(function(b){
+    b.addEventListener('click', function(){
+      var s = document.getElementById(b.dataset.for);
+      s.scrollBy({left: Number(b.dataset.go) * Math.min(s.clientWidth * .8, 660), behavior: rm ? 'auto' : 'smooth'});
+    });
+  });
+  document.getElementById('copy').addEventListener('click', function(){
+    var b = this, el = document.getElementById('addr');
+    function done(){ b.textContent = '복사했습니다'; setTimeout(function(){ b.textContent = '주소 복사'; }, 1800); }
+    function pick(){ var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = '주소를 선택했습니다'; }
+    try { navigator.clipboard.writeText(el.textContent).then(done, pick); } catch(e) { pick(); }
+  });
+})();
+</script>
