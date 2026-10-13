@@ -12,7 +12,7 @@ desc = '부산 동래구 온천장 족발·보쌈 전문점 내사랑족발 온�
 ld = {"@context":"https://schema.org","@type":"Restaurant","name":"내사랑족발 온천장점","servesCuisine":["족발","보쌈","한식"],
  "telephone":"+82-51-711-3848","priceRange":"₩₩",
  "address":{"@type":"PostalAddress","streetAddress":"금강로 135, 1층","addressLocality":"동래구","addressRegion":"부산","addressCountry":"KR"},
- "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"22:30"}],
+ "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"11:30","closes":"22:00"}],
  "hasMap":"https://naver.me/GOhvwcdF"}
 if SITE_URL: ld["url"]=SITE_URL; ld["image"]=SITE_URL+'/img/og.jpg'
 og_img = (SITE_URL+'/img/og.jpg') if SITE_URL else 'img/og.jpg'

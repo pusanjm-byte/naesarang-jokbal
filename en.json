@@ -148,6 +148,7 @@
  "매장 가까이에 무료 공영주차장이 있어 편하게 이용하실 수 있어요. 다만 매장 자체 주차 지원은 해드리지 못하는 점, 너그러운 양해 부탁드립니다. 지하철 1호선 온천장역에서는 걸어서 10분쯤 걸립니다.": "There is a free public parking lot near the restaurant. We are sorry that we cannot offer parking validation of our own. By subway, we are about a 10-minute walk from Oncheonjang Station on Line 1.",
  "인근 무료 공영주차장 이용 (매장 주차 지원 불가)": "Free public lot nearby (no parking validation)",
  "포장 한 상, 불족발·족발·보쌈": "A takeout spread: spicy jokbal, jokbal and bossam",
- "없습니다. 연중무휴, 브레이크타임 없이 매일 11:30부터 22:30까지 엽니다.": "No. We are open every day of the year, 11:30 to 22:30, with no break time.",
- "매일 11:30 ~ 22:30, 연중무휴 (브레이크타임 없음)": "Daily 11:30 to 22:30, open all year (no break time)"
+ "없습니다. 연중무휴, 브레이크타임 없이 매일 11:30부터 22:00까지 엽니다. 라스트오더는 21:00입니다.": "No. We are open every day of the year, 11:30 to 22:00, with no break time. Last order is at 21:00.",
+ "매일 11:30 ~ 22:00, 연중무휴 (브레이크타임 없음)": "Daily 11:30 to 22:00, open all year (no break time)",
+ "라스트오더": "Last order"
 }
