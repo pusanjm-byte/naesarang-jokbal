@@ -47,7 +47,6 @@
  "점심특선 보기": "See the lunch set",
  "네이버에서 리뷰 더 보기": "More reviews on Naver",
  "쉬는 날이 있나요?": "Are you ever closed?",
- "없습니다. 연중무휴로 매일 11:30부터 22:30까지 엽니다. 14:30부터 15:30까지는 브레이크타임입니다.": "No. We are open every day of the year from 11:30 to 22:30, with a break from 14:30 to 15:30.",
  "불족발은 매운가요?": "Is the bul-jokbal spicy?",
  "점심특선은 언제 먹을 수 있나요?": "When is the lunch set available?",
  "365일 매일 11:30부터 14:30까지입니다. 1인 14,000원입니다.": "Every day of the year from 11:30 to 14:30. ₩14,000 per person.",
@@ -148,5 +147,7 @@
  "온천장역에서 매장까지, 한눈에 보는 길": "From Oncheonjang Station to our door, at a glance",
  "매장 가까이에 무료 공영주차장이 있어 편하게 이용하실 수 있어요. 다만 매장 자체 주차 지원은 해드리지 못하는 점, 너그러운 양해 부탁드립니다. 지하철 1호선 온천장역에서는 걸어서 10분쯤 걸립니다.": "There is a free public parking lot near the restaurant. We are sorry that we cannot offer parking validation of our own. By subway, we are about a 10-minute walk from Oncheonjang Station on Line 1.",
  "인근 무료 공영주차장 이용 (매장 주차 지원 불가)": "Free public lot nearby (no parking validation)",
- "포장 한 상, 불족발·족발·보쌈": "A takeout spread: spicy jokbal, jokbal and bossam"
+ "포장 한 상, 불족발·족발·보쌈": "A takeout spread: spicy jokbal, jokbal and bossam",
+ "없습니다. 연중무휴, 브레이크타임 없이 매일 11:30부터 22:30까지 엽니다.": "No. We are open every day of the year, 11:30 to 22:30, with no break time.",
+ "매일 11:30 ~ 22:30, 연중무휴 (브레이크타임 없음)": "Daily 11:30 to 22:30, open all year (no break time)"
 }
